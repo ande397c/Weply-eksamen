@@ -1,0 +1,205 @@
+/*Fonts*/
+
+        /* Montserrat font */
+        @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300;400;500;600;700&display=swap');
+
+        /* Open sans font */
+
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600;700&display=swap');
+
+/************************************************************* Root CSS ****************************************************************************/
+
+:root {
+/* Global colors */
+--white: #FFFFFF;
+--black: #000000;    
+--dark-blue: #003585;
+--blue: #0044AB;
+--light-gray: #757575;
+--dark-gray: #555555;
+--light-blue: #1B52A7;
+
+/* Component-specific colors */
+--header-color: var(--black);
+--header-highlight-color: var(--blue);
+--subheader-color: var(--light-gray);
+--paragraph-primary-color: var(--dark-gray);
+--paragraph-secondary-color: var(--white);
+
+--numbers-highlight-color: var(--light-blue);
+
+--body-color: var(--white);
+
+
+--btn-primary-background-color: var(--dark-blue);
+--btn-secondary-background-color: var(--white);
+--btn-white-background-color: none;
+
+
+/* Font-weight */
+--font-weight-thin: 100;
+--font-weight-light: 300;
+--font-weight-regular: 400;
+--font-weight-medium: 500;
+--font-weight-semibold: 600;
+--font-weight-bold: 700;
+
+
+/*Font-sizes*/
+/* version 1 - dont delete */
+/* --font-size-sm: clamp(0.8rem, -0.01vw + 0.8rem, 0.8rem);
+--font-size-base: clamp(1rem, 0.11vw + 0.97rem, 1.06rem);
+--font-size-md: clamp(1.25rem, 0.3vw + 1.17rem, 1.42rem);
+--font-size-lg: clamp(1.56rem, 0.59vw + 1.41rem, 1.89rem);
+--font-size-xl: clamp(1.95rem, 1.02vw + 1.7rem, 2.52rem);
+--font-size-xxl: clamp(2.44rem, 1.66vw + 2.03rem, 3.35rem);
+--font-size-xxxl: clamp(3.05rem, 2.58vw + 2.41rem, 4.47rem); */
+
+/* version 2 - don´t delete */
+--font-size-sm: clamp(0.8rem, -0.09vw + 0.82rem, 0.75rem);
+--font-size-base: clamp(1rem, 0vw + 1rem, 1rem);
+--font-size-md: clamp(1.25rem, 0.15vw + 1.21rem, 1.33rem);
+--font-size-lg: clamp(1.56rem, 0.39vw + 1.47rem, 1.78rem);
+--font-size-xl: clamp(1.95rem, 0.76vw + 1.76rem, 2.37rem);
+--font-size-xxl: clamp(2.44rem, 1.3vw + 2.12rem, 3.16rem);
+--font-size-xxxl: clamp(3.05rem, 2.1vw + 2.53rem, 4.21rem);
+
+ /*Letter spacing */
+ --letter-spacing-lg: 0.15em;
+ --letter-spacing-md: 0.1em;
+ --letter-spacing-sm: 0.08em;
+/*Spacing*/
+--spacing-1: 0.125rem;
+--spacing-2: 0.25rem;
+--spacing-3: 0.5rem;
+--spacing-4: 0.75rem;
+--spacing-5: 1rem;
+--spacing-6: 1.15rem;
+--spacing-7: 2rem;
+--spacing-8: 2.5rem;
+--spacing-9: 3rem;
+--spacing-10: 4rem;
+--spacing-11: 5rem;
+--spacing-12: 6rem;
+--spacing-13: 10rem;
+--spacing-14: 120rem;
+ /*Borders*/
+ --border-white-thin: 2px solid var(--white);
+ --border-blue-thin: 2px solid var(--dark-blue);
+
+}
+
+
+/************************************************************* Root slut ****************************************************************************/
+
+
+/************************************************************* General styling ****************************************************************************/
+
+
+/* font rules */
+h1{
+    font-family: "montserrat", serif;
+    font-size: var(--font-size-xxl);
+    font-weight: var(--font-weight-medium);
+    color: var(--header)-color;  
+}
+
+h2{
+    font-family: "montserrat", serif;
+    font-size: var(--font-size-xl);
+    font-weight: var(--font-weight-medium);
+    color: var(--header-color);  
+}
+
+h3{
+    font-family: "montserrat", serif;
+    font-size: var(--font-size-lg);
+    font-weight: var(--font-weight-medium);
+    color: var(--header-color);  
+
+}
+
+h4{
+
+    font-family: "Open Sans", sans-serif;
+    font-size: var(--font-size-md);
+    font-weight: var(--font-weight-regular);  
+     color: var(--subheader-color);
+}
+
+h5{
+    font-family: "montserrat", serif;
+    font-size: var(--font-size-sm);
+    font-weight: var(--font-weight-medium);
+    color: var(--header-color);  
+}
+
+p {
+ font-family: "Open Sans", sans-serif;
+ font-size: var(--font-size-base);
+ font-weight: var(--font-weight-regular);  
+  color: var(--paragraph-primary-color);
+
+}
+
+/**Komponenter**/
+
+.bth_box{
+width: auto;
+padding-block: 2rem;
+padding-inline: 3rem
+}
+.bth_box_W{
+background-color: var(--dark-gray);
+width: auto;
+padding-block: 2rem;
+padding-inline: 3rem;
+}
+
+.btn_primary{
+    background-color: var(--btn-primary-background-color);
+    border: none;
+    color: var(--white);
+    width: 8rem;
+    padding-block: var(--spacing-3);
+    padding-inline: var(--spacing-3);
+    font-size: var(--font-size-base); 
+    font-family: "montserrat", serif;
+    font-weight: var(--font-weight-medium);
+    text-decoration: none;
+    border-radius: 4px;
+    cursor: pointer;
+     
+}
+
+.btn_secondary{ 
+     background-color: var(--btn-white-background-color);
+    border: var(--border-blue-thin);
+    color: var(--btn-primary-background-color);
+    width: 8rem;
+    padding-block: var(--spacing-3);
+    padding-inline: var(--spacing-3);
+    font-size: var(--font-size-base); 
+    font-family: "montserrat", serif;
+    font-weight: var(--font-weight-medium);
+
+    text-decoration: none;
+    border-radius: 4px;
+    cursor: pointer;}
+
+.btn_white{  
+    background-color: var(--btn-white-background-color);
+    border: var(--border-white-thin);
+    color: var(--white);
+    width: 8rem;
+    padding-block: var(--spacing-3);
+    padding-inline: var(--spacing-3);
+    font-size: var(--font-size-base); 
+    font-family: "montserrat", serif;
+    font-weight: var(--font-weight-medium);
+    text-decoration: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+/************************************************************* General slut ****************************************************************************/
