@@ -9,6 +9,7 @@
 
 /************************************************************* Root CSS ****************************************************************************/
 
+
 :root {
 /* Global colors */
 --white: #FFFFFF;
@@ -56,13 +57,40 @@
 --font-size-xxxl: clamp(3.05rem, 2.58vw + 2.41rem, 4.47rem); */
 
 /* version 2 - don´t delete */
---font-size-sm: clamp(0.8rem, -0.09vw + 0.82rem, 0.75rem);
+/* --font-size-sm: clamp(0.8rem, -0.09vw + 0.82rem, 0.75rem);
 --font-size-base: clamp(1rem, 0vw + 1rem, 1rem);
 --font-size-md: clamp(1.25rem, 0.15vw + 1.21rem, 1.33rem);
 --font-size-lg: clamp(1.56rem, 0.39vw + 1.47rem, 1.78rem);
 --font-size-xl: clamp(1.95rem, 0.76vw + 1.76rem, 2.37rem);
 --font-size-xxl: clamp(2.44rem, 1.3vw + 2.12rem, 3.16rem);
---font-size-xxxl: clamp(3.05rem, 2.1vw + 2.53rem, 4.21rem);
+--font-size-xxxl: clamp(3.05rem, 2.1vw + 2.53rem, 4.21rem); */
+
+/* version 3 - don´t delete */
+/* --font-size-sm: clamp(0.5rem, 0.45vw + 0.39rem, 0.75rem);
+--font-size-base: clamp(0.63rem, 0.68vw + 0.45rem, 1rem);
+--font-size-md: clamp(0.78rem, 1vw + 0.53rem, 1.33rem);
+--font-size-lg: clamp(0.98rem, 1.46vw + 0.61rem, 1.78rem);
+--font-size-xl: clamp(1.22rem, 2.09vw + 0.7rem, 2.37rem);
+--font-size-xxl: clamp(1.53rem, 2.97vw + 0.78rem, 3.16rem);
+--font-size-xxxl: clamp(1.91rem, 4.18vw + 0.86rem, 4.21rem); */
+
+/* --font-size-sm: clamp(0.6rem, 0.52vw + 0.47rem, 0.8rem);
+--font-size-base: clamp(0.75rem, 0.66vw + 0.59rem, 1rem);
+--font-size-md: clamp(0.94rem, 0.82vw + 0.74rem, 1.25rem);
+--font-size-lg: clamp(1.17rem, 1.02vw + 0.92rem, 1.56rem);
+--font-size-xl: clamp(1.46rem, 1.28vw + 1.15rem, 1.95rem);
+--font-size-xxl: clamp(1.83rem, 1.6vw + 1.44rem, 2.44rem);
+--font-size-xxxl: clamp(2.29rem, 2vw + 1.8rem, 3.05rem); */
+
+
+--font-size-sm: clamp(0.7rem, 0.52vw + 0.57rem, 0.9rem);
+--font-size-base: clamp(0.88rem, 0.66vw + 0.72rem, 1.13rem);
+--font-size-md: clamp(1.09rem, 0.82vw + 0.89rem, 1.41rem);
+--font-size-lg: clamp(1.37rem, 1.02vw + 1.12rem, 1.76rem);
+--font-size-xl: clamp(1.71rem, 1.28vw + 1.4rem, 2.2rem);
+--font-size-xxl: clamp(2.14rem, 1.6vw + 1.75rem, 2.75rem);
+--font-size-xxxl: clamp(2.67rem, 2vw + 2.18rem, 3.43rem);
+
 
  /*Letter spacing */
  --letter-spacing-lg: 0.15em;
@@ -96,12 +124,21 @@
 /************************************************************* General styling ****************************************************************************/
 
 
+
+*{
+    margin: 0;
+    padding: 0;
+    
+}
+
 /* font rules */
 h1{
     font-family: "montserrat", serif;
     font-size: var(--font-size-xxl);
     font-weight: var(--font-weight-medium);
-    color: var(--header)-color;  
+    color: var(--header)-color; 
+    line-height: 2.2rem;
+ 
 }
 
 h2{
@@ -124,14 +161,14 @@ h4{
     font-family: "Open Sans", sans-serif;
     font-size: var(--font-size-md);
     font-weight: var(--font-weight-regular);  
-     color: var(--subheader-color);
+    color: var(--subheader-color);  
 }
 
 h5{
     font-family: "montserrat", serif;
-    font-size: var(--font-size-sm);
-    font-weight: var(--font-weight-medium);
-    color: var(--header-color);  
+    font-size: var(--font-size-base);
+    font-weight: var(--font-weight-regular);
+    color: var(--subheader-color); 
 }
 
 p {
@@ -201,5 +238,43 @@ padding-inline: 3rem;
     border-radius: 4px;
     cursor: pointer;
 }
+
+
+/* mediaquarry regler */
+
+/* Mobil */
+
+
+.section{
+    margin-bottom: 2rem;
+  }
+
+/* tablet */
+@media (min-width: 730px){
+
+    h1{
+        line-height:unset;
+      }
+
+      .section {
+        margin-bottom: 4rem;
+      }
+      
+
+      
+}
+
+
+
+/* desktop */
+
+@media (min-width: 1000px){
+    
+    .section{
+        margin-bottom: 6rem;
+      }
+
+}
+
 
 /************************************************************* General slut ****************************************************************************/
