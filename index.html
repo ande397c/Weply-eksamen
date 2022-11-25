@@ -5,178 +5,283 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link rel="stylesheet" href="stylesheets/mutual.css">
-    <link rel="stylesheet" href="stylesheets/index.css">
+    <link rel="stylesheet" href="stylesheets/mutual.css" />
+    <link rel="stylesheet" href="stylesheets/index.css" />
   </head>
   <body>
-<header>
-  <nav> 
-    <p>NavBar</p>
-  </nav>
-</header>    
+    <header class="header" id="header">
+      <section class="wrapper container">
+        <a href="./index.html">
+          <div class="logo_container brand">
+            <img src="https://weply.dk/wp-content/uploads/2020/04/weply-logo-bluaa.png" alt="" />
+          </div>
+        </a>
+        <div class="moible_btn_container">
+          <button class="btn_primary">Prøv gratis</button>
+        </div>
 
-<main id="main">
+        <div class="burger" id="burger">
+          <span class="burger-line"></span>
+          <span class="burger-line"></span>
+          <span class="burger-line"></span>
+        </div>
+        <span class="overlay"></span>
+        <nav class="navbar" id="navbar">
+          <ul class="menu" id="menu">
+            <li class="menu-item menu-dropdown">
+              <span class="menu-link" data-toggle="submenu">Produkt<i class="bx bx-chevron-down"></i></span>
 
-  <!-- hero section -->
-<section class="hero_section">
-  <div class="hero_top_content">
+              <ul class="submenu">
+                <li class="submenu-item"><a href="#" class="submenu-link">Produktet</a></li>
 
-  <article class="hero_text">
-      <h1>Gå aldrig glip af nye kunder med <span class="header_highlight">24/7</span> livechat</h1>
-      <h4>Vores trænede chatkonsulenter håndterer chats for mere end 2.000 virksomheder. De er specialister i at generere kvalificerede leads på tværs af industrier.</h4>
-  </article>
+                <li class="submenu-item"><a href="#" class="submenu-link">Demo</a></li>
 
-  <!-- Gets a display: none, on tablet & desktop view -->
-        <figure class="hero_pic_mobile">
-          <img src="img/hero_placeholder.png" alt="">
+                <li class="submenu-item"><a href="#" class="submenu-link">Ekstra item</a></li>
+              </ul>
+            </li>
+
+            <li class="menu-item"><a href="#" class="menu-link">Om os</a></li>
+
+            <li class="menu-item"><a href="#" class="menu-link">Impact</a></li>
+
+            <li class="menu-item"><a href="#" class="menu-link">Blog</a></li>
+          </ul>
+
+          <div class="btn_container">
+            <button class="btn_secondary">Log ind</button>
+            <button class="btn_primary">Prøv gratis</button>
+          </div>
+        </nav>
+      </section>
+    </header>
+
+    <main id="main">
+      <!-- hero section -->
+      <section class="hero_section">
+        <div class="hero_top_content">
+          <article class="hero_text">
+            <h1>Gå aldrig glip af nye kunder med <span class="header_highlight">24/7</span> livechat</h1>
+            <h4>Vores trænede chatkonsulenter håndterer chats for mere end 2.000 virksomheder. De er specialister i at generere kvalificerede leads på tværs af industrier.</h4>
+          </article>
+
+          <!-- Gets a display: none, on tablet & desktop view -->
+          <figure class="hero_pic_mobile">
+            <img src="img/hero_placeholder.png" alt="" />
+          </figure>
+        </div>
+
+        <!-- Gets a display: none, on mobil view -->
+        <figure class="hero_pic_desktop">
+          <img src="img/hero_placeholder.png" alt="" />
         </figure>
-</div>
 
-<!-- Gets a display: none, on mobil view -->
-<figure class="hero_pic_desktop">
-  <img src="img/hero_placeholder.png" alt="">
-</figure>
+        <section class="data_bullets">
+          <article class="data_bullets_wrapper">
+            <div>
+              <h4>1500+</h4>
+              <h5>Kunder</h5>
+            </div>
+            <span class="vertical_line"></span>
+            <div>
+              <h4>200K+</h4>
+              <h5>Leads</h5>
+            </div>
+            <span class="vertical_line"></span>
+            <div>
+              <h4>1,5M+</h4>
+              <h5>Served</h5>
+            </div>
+          </article>
+        </section>
 
-<section class="data_bullets">
-<article class="data_bullets_wrapper">
-  <div>
-    <h4>1500+</h4>
-    <h5>Kunder</h5>
-  </div>
-  <span class="vertical_line"></span>
-  <div>
-    <h4>200K+</h4>
-    <h5>Leads</h5>
-  </div>
-  <span class="vertical_line"></span>
-  <div>
-    <h4>1,5M+</h4>
-    <h5>Served</h5>
-  </div>
-</article>
-</section>
+        <section class="hero_buttons">
+          <div class="hero_buttons_wrapper">
+            <button class="btn_primary">CTA</button>
+            <button class="btn_secondary">CTA</button>
+          </div>
+        </section>
+      </section>
 
-  <section class="hero_buttons">
-<div class="hero_buttons_wrapper">
-  <button class="btn_primary"> CTA</button>
-  <button class="btn_secondary">CTA</button>
-</div>
-  </section>
-</section>
+      <section class="kunde_banner">
+        <div class="banner">
+          <div class="banner_wrapper">
+            <a href="https://naervarme.dk/"><img src="https://weply.dk/wp-content/uploads/Nærvarme-Danmark_logo_sort.png" alt="kunde logo og link" /></a>
+            <a href="https://www.jaguar.dk/"><img src="https://weply.dk/wp-content/uploads/Jaguar.png" alt="kunde logo og link" /></a>
+            <a href="https://www.unilever.dk/"><img src="https://weply.dk/wp-content/uploads/Unilever.png" alt="kunde logo og link" /></a>
+            <a href="https://bcopenhagen.dk/"><img src="https://weply.dk/wp-content/uploads/bo-01.png" alt="kunde logo og link" /></a>
+            <a href="https://www.hyundai.dk/"><img src="https://weply.dk/wp-content/uploads/hyundai-automobiles-1-01.png" alt="kunde logo og link" /></a>
+            <a href="https://bomae.dk/"><img src="https://weply.dk/wp-content/uploads/Bomae-Blue-Box-1-1.png" alt="kunde logo og link" /></a>
 
-<section class="kunde_banner">
-  <div class="banner">
-    <div class="banner_wrapper">
-      <a href="https://naervarme.dk/"><img src="https://weply.dk/wp-content/uploads/Nærvarme-Danmark_logo_sort.png" alt="kunde logo og link" /></a>
-      <a href="https://www.jaguar.dk/"><img src="https://weply.dk/wp-content/uploads/Jaguar.png" alt="kunde logo og link" /></a>
-      <a href="https://www.unilever.dk/"><img src="https://weply.dk/wp-content/uploads/Unilever.png" alt="kunde logo og link" /></a>
-      <a href="https://bcopenhagen.dk/"><img src="https://weply.dk/wp-content/uploads/bo-01.png" alt="kunde logo og link" /></a>
-      <a href="https://www.hyundai.dk/"><img src="https://weply.dk/wp-content/uploads/hyundai-automobiles-1-01.png" alt="kunde logo og link" /></a>
-      <a href="https://bomae.dk/"><img src="https://weply.dk/wp-content/uploads/Bomae-Blue-Box-1-1.png" alt="kunde logo og link" /></a>
-     
-      <a href="https://naervarme.dk/"><img src="https://weply.dk/wp-content/uploads/Nærvarme-Danmark_logo_sort.png" alt="kunde logo og link" /></a>
-      <a href="https://www.jaguar.dk/"><img src="https://weply.dk/wp-content/uploads/Jaguar.png" alt="kunde logo og link" /></a>
-      <a href="https://www.unilever.dk/"><img src="https://weply.dk/wp-content/uploads/Unilever.png" alt="kunde logo og link" /></a>
-      <a href="https://bcopenhagen.dk/"><img src="https://weply.dk/wp-content/uploads/bo-01.png" alt="kunde logo og link" /></a>
-      <a href="https://www.hyundai.dk/"><img src="https://weply.dk/wp-content/uploads/hyundai-automobiles-1-01.png" alt="kunde logo og link" /></a>
-      <a href="https://bomae.dk/"><img src="https://weply.dk/wp-content/uploads/Bomae-Blue-Box-1-1.png" alt="kunde logo og link" /></a>
+            <a href="https://naervarme.dk/"><img src="https://weply.dk/wp-content/uploads/Nærvarme-Danmark_logo_sort.png" alt="kunde logo og link" /></a>
+            <a href="https://www.jaguar.dk/"><img src="https://weply.dk/wp-content/uploads/Jaguar.png" alt="kunde logo og link" /></a>
+            <a href="https://www.unilever.dk/"><img src="https://weply.dk/wp-content/uploads/Unilever.png" alt="kunde logo og link" /></a>
+            <a href="https://bcopenhagen.dk/"><img src="https://weply.dk/wp-content/uploads/bo-01.png" alt="kunde logo og link" /></a>
+            <a href="https://www.hyundai.dk/"><img src="https://weply.dk/wp-content/uploads/hyundai-automobiles-1-01.png" alt="kunde logo og link" /></a>
+            <a href="https://bomae.dk/"><img src="https://weply.dk/wp-content/uploads/Bomae-Blue-Box-1-1.png" alt="kunde logo og link" /></a>
 
-      <a href="https://naervarme.dk/"><img src="https://weply.dk/wp-content/uploads/Nærvarme-Danmark_logo_sort.png" alt="kunde logo og link" /></a>
-      <a href="https://www.jaguar.dk/"><img src="https://weply.dk/wp-content/uploads/Jaguar.png" alt="kunde logo og link" /></a>
-      <a href="https://www.unilever.dk/"><img src="https://weply.dk/wp-content/uploads/Unilever.png" alt="kunde logo og link" /></a>
-      <a href="https://bcopenhagen.dk/"><img src="https://weply.dk/wp-content/uploads/bo-01.png" alt="kunde logo og link" /></a>
-      <a href="https://www.hyundai.dk/"><img src="https://weply.dk/wp-content/uploads/hyundai-automobiles-1-01.png" alt="kunde logo og link" /></a>
-      <a href="https://bomae.dk/"><img src="https://weply.dk/wp-content/uploads/Bomae-Blue-Box-1-1.png" alt="kunde logo og link" /></a>
-     
-      <a href="https://naervarme.dk/"><img src="https://weply.dk/wp-content/uploads/Nærvarme-Danmark_logo_sort.png" alt="kunde logo og link" /></a>
-      <a href="https://www.jaguar.dk/"><img src="https://weply.dk/wp-content/uploads/Jaguar.png" alt="kunde logo og link" /></a>
-      <a href="https://www.unilever.dk/"><img src="https://weply.dk/wp-content/uploads/Unilever.png" alt="kunde logo og link" /></a>
-      <a href="https://bcopenhagen.dk/"><img src="https://weply.dk/wp-content/uploads/bo-01.png" alt="kunde logo og link" /></a>
-      <a href="https://www.hyundai.dk/"><img src="https://weply.dk/wp-content/uploads/hyundai-automobiles-1-01.png" alt="kunde logo og link" /></a>
-      <a href="https://bomae.dk/"><img src="https://weply.dk/wp-content/uploads/Bomae-Blue-Box-1-1.png" alt="kunde logo og link" /></a>
-    </div>
+            <a href="https://naervarme.dk/"><img src="https://weply.dk/wp-content/uploads/Nærvarme-Danmark_logo_sort.png" alt="kunde logo og link" /></a>
+            <a href="https://www.jaguar.dk/"><img src="https://weply.dk/wp-content/uploads/Jaguar.png" alt="kunde logo og link" /></a>
+            <a href="https://www.unilever.dk/"><img src="https://weply.dk/wp-content/uploads/Unilever.png" alt="kunde logo og link" /></a>
+            <a href="https://bcopenhagen.dk/"><img src="https://weply.dk/wp-content/uploads/bo-01.png" alt="kunde logo og link" /></a>
+            <a href="https://www.hyundai.dk/"><img src="https://weply.dk/wp-content/uploads/hyundai-automobiles-1-01.png" alt="kunde logo og link" /></a>
+            <a href="https://bomae.dk/"><img src="https://weply.dk/wp-content/uploads/Bomae-Blue-Box-1-1.png" alt="kunde logo og link" /></a>
 
+            <a href="https://naervarme.dk/"><img src="https://weply.dk/wp-content/uploads/Nærvarme-Danmark_logo_sort.png" alt="kunde logo og link" /></a>
+            <a href="https://www.jaguar.dk/"><img src="https://weply.dk/wp-content/uploads/Jaguar.png" alt="kunde logo og link" /></a>
+            <a href="https://www.unilever.dk/"><img src="https://weply.dk/wp-content/uploads/Unilever.png" alt="kunde logo og link" /></a>
+            <a href="https://bcopenhagen.dk/"><img src="https://weply.dk/wp-content/uploads/bo-01.png" alt="kunde logo og link" /></a>
+            <a href="https://www.hyundai.dk/"><img src="https://weply.dk/wp-content/uploads/hyundai-automobiles-1-01.png" alt="kunde logo og link" /></a>
+            <a href="https://bomae.dk/"><img src="https://weply.dk/wp-content/uploads/Bomae-Blue-Box-1-1.png" alt="kunde logo og link" /></a>
+          </div>
+        </div>
+      </section>
 
-  
-   
-    
+      <section class="main_grid">
+        <section class="content_wrapper">
+          <section class="section_1 section">
+            <article class="text_container">
+              <h2>Vores tilfredse kunder</h2>
+              <p>Vores trænede chatkonsulenter håndterer chats for mere end 2.000 virksomheder. De er specialister i at generere kvalificerede leads på tværs af industrier.</p>
+            </article>
 
-  </div>
-</section>
+            <figure class="pic">
+              <img src="img/placeholder_R.png" alt="" />
+            </figure>
 
+            <div class="section_button">
+              <button class="btn_primary">CTA</button>
+            </div>
+          </section>
 
-<section class="main_grid">
-<section class="content_wrapper">
+          <section class="section_2 section">
+            <article class="text_container">
+              <h2>Hvem er vi</h2>
+              <p>Vores trænede chatkonsulenter håndterer chats for mere end 2.000 virksomheder. De er specialister i at generere kvalificerede leads på tværs af industrier.</p>
+              <p>Vores trænede chatkonsulenter håndterer chats for mere end 2.000 virksomheder. De er specialister i at generere kvalificerede leads på tværs af industrier</p>
+            </article>
 
-  <section class="section_1 section">
-    <article class="text_container">
-      <h2> Vores tilfredse kunder</h2>
-      <p>Vores trænede chatkonsulenter håndterer chats for mere end 2.000 virksomheder. De er specialister i at generere kvalificerede leads på tværs af industrier.</p>
-    </article>
+            <figure class="pic">
+              <img src="img/placeholder_L.png" alt="" />
+            </figure>
 
-    <figure class="pic">
-      <img src="img/placeholder_R.png" alt="">
-    </figure> 
+            <div class="section_button">
+              <button class="btn_primary">CTA</button>
+            </div>
+          </section>
 
-    <div class="section_button">   
-       <button class="btn_primary"> CTA</button>
-    </div>
-  </section>
+          <section class="section_3 section">
+            <article class="bullets">
+              <h3>Tallene taler for sige selv</h3>
 
-  <section class="section_2 section">
-    <article class="text_container">
-      <h2> Hvem er vi</h2>
-      <p>Vores trænede chatkonsulenter håndterer chats for mere end 2.000 virksomheder. De er specialister i at generere kvalificerede leads på tværs af industrier.</p>
-      <p>Vores trænede chatkonsulenter håndterer chats for mere end 2.000 virksomheder. De er specialister i at generere kvalificerede leads på tværs af industrier</p>
-    </article>
+              <aside class="data_bullets">
+                <div class="data_bullet_container">
+                  <p class="number">93 <span class="procent_tegn">%</span></p>
+                  <h4>Fortrækker chats for mere end 2.000 virksomheder.</h4>
+                </div>
+                <div class="data_bullet_container">
+                  <p class="number">45 <span class="procent_tegn">%</span></p>
+                  <h4>Fortrækker chats for mere end 2.000 virksomheder.</h4>
+                </div>
+                <div class="data_bullet_container">
+                  <p class="number">45 <span class="procent_tegn">%</span></p>
+                  <h4>Fortrækker chats for mere end 2.000 virksomheder.</h4>
+                </div>
+              </aside>
 
-    <figure class="pic">
-      <img src="img/placeholder_L.png" alt="">
-    </figure> 
+              <div class="section_button">
+                <button class="btn_primary">CTA</button>
+              </div>
+            </article>
+          </section>
+        </section>
+      </section>
+    </main>
 
+    <footer>
+      <div id="footer_column_grid">
+        <article id="footer_contact">
+          <h3>Kontakt</h3>
+          <ul>
+            <li>
+              <a href="mailto:info@weply.dk">info@weply.dk</a>
+            </li>
+            <li>
+              <a href="tel:4521199199">+ 45 21 199 199</a>
+            </li>
+            <li>
+              <a href="#">Spørg en chatkonsulent</a>
+            </li>
+          </ul>
+        </article>
 
-    <div class="section_button">
-    <button class="btn_primary"> CTA</button>
-    </div>
-  </section>
+        <article id="footer-form">
+          <h3>Øg din konventering</h3>
+          <p>Få tips, tricks og teknikker til at få flere leads og øge din konvertering</p>
+          <form id="footer-input">
+            <label class="checkbox"> <input type="checkbox" id="footer_checkbox" /> Jeg godkender Weplys privatlivspolitik. </label>
+            <div class="input_container">
+              <input type="text" placeholder="Email" />
+              <button>Skriv mig op!</button>
+            </div>
+          </form>
+        </article>
 
-  <section class="section_3 section">
-<article class="bullets">
-  <h3>Tallene taler for sige selv</h3>
-  
-  <aside class="data_bullets">
-    <div class="data_bullet_container">
-      <p class="number"> 93 <span class="procent_tegn">%</span> </p>
-      <h4>Fortrækker chats for mere end 2.000 virksomheder.</h4>
-    </div>
-    <div class="data_bullet_container">
-      <p class="number"> 45 <span class="procent_tegn">%</span> </p>     
-      <h4>Fortrækker chats for mere end 2.000 virksomheder.</h4>
-    </div>
-    <div class="data_bullet_container">
-      <p class="number"> 45 <span class="procent_tegn">%</span> </p>
-      <h4>Fortrækker chats for mere end 2.000 virksomheder.</h4>
-    </div>
-  </aside>
-  
+        <article id="try_weply">
+          <h3>Prøv Weply</h3>
+          <ul>
+            <li>
+              <a href="#">Start en gratis prøveperiode </a>
+            </li>
+            <li>
+              <a href="#">Bestil en demo</a>
+            </li>
+            <li>
+              <a href="#">Weply vs. Intercom</a>
+            </li>
+            <li>
+              <a href="#">Weply vs. Zendesk</a>
+            </li>
+            <li>
+              <a href="#">Weply vs. HubSpot</a>
+            </li>
+            <li>
+              <a href="#">Weply vs. Tawk.to</a>
+            </li>
+          </ul>
+        </article>
+      </div>
 
-  <div class="section_button">
-  <button class="btn_primary"> CTA</button>
-  </div>
+      <article id="footer_bottom_grid">
+        <div id="member_of">
+          <h3>Medlem af</h3>
 
-</article>
-  </section>
+          <!-- <div id="footer_img_container"> -->
 
- </section>
-   </section>
+          <div class="member_img_container">
+            <img src="https://weply.chat/wp-content/uploads/Dansk-Industri-1.png" alt="" />
 
+            <img src="https://weply.chat/wp-content/uploads/Dansk-erhverv-1.png" alt="" />
+          </div>
+        </div>
 
-</main>
+        <div class="social_img_container">
+          <a href="https://www.facebook.com/weplychat">
+            <img src="https://weply.chat/wp-content/uploads/facebook-1.png" alt="" />
+          </a>
 
+          <img src="https://weply.chat/wp-content/uploads/linkedin-1.png" alt="" />
 
+          <img src="https://weply.chat/wp-content/uploads/tp-ikon.png" alt="" />
 
+          <img src="https://weply.chat/wp-content/uploads/TikTok_logo.png" alt="" />
+        </div>
+      </article>
 
+      <!-- </div> -->
 
-<footer></footer>
+      <hr />
+      <p>© Weply A/S 2022 | CVR 35414800 | Vesterbrogade 6D, 1620 København V</p>
+    </footer>
+    <script src="scripts/main.js"></script>
   </body>
 </html>
