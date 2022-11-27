@@ -1,0 +1,139 @@
+h1 {
+  text-align: center;
+  margin-block: 1rem;
+}
+
+main {
+  margin-block: 2rem;
+}
+
+#content_wrapper {
+  display: grid;
+  justify-items: center;
+  gap: 1rem;
+}
+
+#bullets {
+  width: fit-content;
+}
+
+#signup_form {
+  width: 280px;
+  border: 1px solid #000000;
+  border-radius: 10px;
+  padding: 10px;
+}
+
+#signup_form h3 {
+  text-align: center;
+}
+
+#signup_form p {
+  text-align: left;
+  margin: 1.3rem 0;
+}
+
+.field_container {
+  position: relative;
+  margin-bottom: 1.4rem;
+}
+
+.floating-input {
+  font-size: 14px;
+  padding: 4px 4px;
+  display: block;
+  width: 100%;
+  height: 30px;
+  background-color: transparent;
+  border: none;
+  border-bottom: 2px solid #757575;
+}
+
+.floating-input:focus {
+  outline: none;
+  border-bottom: 1px solid #5264ae;
+}
+
+.field_container > label {
+  color: #000;
+  font-size: 14px;
+  font-weight: normal;
+  position: absolute;
+  pointer-events: none;
+  left: 5px;
+  top: 5px;
+  transition: 0.2s ease all;
+  -moz-transition: 0.2s ease all;
+  -webkit-transition: 0.2s ease all;
+}
+
+.floating-input:focus ~ label,
+.floating-input:not(:placeholder-shown) ~ label {
+  top: -13px;
+  font-size: 14px;
+  color: #5264ae;
+}
+
+.floating-input:focus,
+.floating-input:not(:placeholder-shown) {
+  border-bottom: 1px solid #5264ae;
+}
+
+/* .floating-input:focus ~ .bar:before,
+.floating-input:focus ~ .bar:after {
+  width: 50%;
+} */
+
+#form-phone-section {
+  display: grid;
+  grid-template-columns: 1fr 3.5fr;
+  gap: 2rem;
+}
+
+.checkbox {
+  margin: 1rem 0;
+  display: block;
+  font-size: 0.9rem;
+}
+
+[type="checkbox"] {
+  vertical-align: middle;
+  margin-right: 0.5rem;
+}
+
+/* ____ Bullets section _______ */
+
+#bullets_section {
+  margin: 0 0.3rem;
+}
+
+.bullet {
+  display: flex;
+  align-items: center;
+  margin: 1rem 0;
+}
+
+.bullet img {
+  width: 1.8rem;
+  height: 1.8rem;
+  margin-right: 0.5rem;
+}
+
+@media (min-width: 700px) {
+  #content_wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .bullet {
+    margin: 3rem 0;
+  }
+
+  #signup_form {
+    min-width: 420px;
+    max-width: 100%;
+    padding: 30px;
+  }
+}

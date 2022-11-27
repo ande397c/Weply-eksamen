@@ -5,8 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="../stylesheets/mutual.css" />
-    <link rel="stylesheet" href="../stylesheets/blog.css" />
-    <title>Blog</title>
+    <link rel="stylesheet" href="../stylesheets/signup.css" />
+    <title>Gratis Prøveperiode</title>
   </head>
   <body>
     <header class="header" id="header">
@@ -56,82 +56,69 @@
     </header>
 
     <main>
-      <section id="blog_header">
-        <h1>Udforsk den spændende verden af chat, samtaler og konverteringer</h1>
+      <h1>
+        Konverter din trafik til leads – <br />
+        Prøv gratis i 7 dage
+      </h1>
 
-        <h3>Lad dig inspirere af vores seneste indsigter</h3>
-        <img src="../img/blog.png" alt="" />
+      <section id="content_wrapper">
+        <form id="signup_form">
+          <h3>Skriv dig op til en gratis prøveperiode</h3>
+
+          <p>Vi opretter din chat, så snart vi kommer i kontakt med dig. Derfra tager det kun 5 minutter at komme i gang.</p>
+
+          <div class="field_container">
+            <input class="floating-input" type="text" placeholder=" " required />
+            <label>Navn</label>
+          </div>
+
+          <article id="form-phone-section">
+            <div class="field_container">
+              <input class="floating-input" placeholder=" " required type="number" />
+              <label>Landkode</label>
+            </div>
+
+            <div class="field_container">
+              <input class="floating-input" type="number" placeholder=" " required />
+              <label>Telefon nr.</label>
+            </div>
+          </article>
+
+          <div class="field_container">
+            <input class="floating-input" type="text" placeholder=" " />
+            <label>Din hjemmeside</label>
+          </div>
+
+          <label class="checkbox"> <input type="checkbox" id="checkbox" /> Jeg accepterer, at I bruger mine oplysninger til at kontakte mig. </label>
+
+          <button class="btn_primary">CTA</button>
+        </form>
+
+        <article id="bullets_section">
+          <div id="bullets">
+            <div class="bullet">
+              <img src="../img/bullet.svg" alt="" />
+              <p>Vores chatkonsulenter håndterer chatten 24/7</p>
+            </div>
+
+            <div class="bullet">
+              <img src="../img/bullet.svg" alt="" />
+              <p>Vi sender varme leads i hele prøveperioden</p>
+            </div>
+
+            <div class="bullet">
+              <img src="../img/bullet.svg" alt="" />
+              <p>Prøveperioden er 100% uforpligtende Vejledning af</p>
+            </div>
+
+            <div class="bullet">
+              <img src="../img/bullet.svg" alt="" />
+              <p>Customer Success Manager Hver 3. chat blev til et lead i 2021</p>
+            </div>
+          </div>
+        </article>
       </section>
-
-      <section id="blogs_content">
-        <!-- Blog -->
-        <article class="blog">
-          <img src="../img/blog-img.png" alt="" />
-          <div class="blog_text">
-            <h5>Markedsføring</h5>
-            <h4>Leadgenerering som markedsføringsstrategi</h4>
-            <a href="#"> <button class="read_more_blog">Læs mere</button></a>
-          </div>
-        </article>
-        <!-- Blog -->
-        <article class="blog">
-          <img src="../img/blog-img.png" alt="" />
-          <div class="blog_text">
-            <h5>Markedsføring</h5>
-            <h4>Leadgenerering som markedsføringsstrategi</h4>
-            <a href="#"> <button class="read_more_blog">Læs mere</button></a>
-          </div>
-        </article>
-        <!-- Blog -->
-        <article class="blog">
-          <img src="../img/blog-img.png" alt="" />
-          <div class="blog_text">
-            <h5>Markedsføring</h5>
-            <h4>Leadgenerering som markedsføringsstrategi</h4>
-            <a href="#"> <button class="read_more_blog">Læs mere</button></a>
-          </div>
-        </article>
-        <!-- Blog -->
-        <article class="blog">
-          <img src="../img/blog-img.png" alt="" />
-          <div class="blog_text">
-            <h5>Markedsføring</h5>
-            <h4>Leadgenerering som markedsføringsstrategi</h4>
-            <a href="#"> <button class="read_more_blog">Læs mere</button></a>
-          </div>
-        </article>
-        <!-- Blog -->
-        <article class="blog">
-          <img src="../img/blog-img.png" alt="" />
-          <div class="blog_text">
-            <h5>Markedsføring</h5>
-            <h4>Leadgenerering som markedsføringsstrategi</h4>
-            <a href="#"> <button class="read_more_blog">Læs mere</button></a>
-          </div>
-        </article>
-        <!-- Blog -->
-        <article class="blog">
-          <img src="../img/blog-img.png" alt="" />
-          <div class="blog_text">
-            <h5>Markedsføring</h5>
-            <h4>Leadgenerering som markedsføringsstrategi</h4>
-            <a href="#"> <button class="read_more_blog">Læs mere</button></a>
-          </div>
-        </article>
-        <!-- Blog -->
-      </section>
-
-      <article class="blog_ui">
-        <span class="arrow-prev">&#8592;</span>
-        <div class="blog_pages">
-          <div class="active_page">1</div>
-          <div>2</div>
-          <div>3</div>
-        </div>
-        <span class="arrow-next">&#8594;</span>
-      </article>
     </main>
-
     <footer>
       <div id="footer_column_grid">
         <article id="footer_contact">
@@ -218,5 +205,4 @@
       <p>© Weply A/S 2022 | CVR 35414800 | Vesterbrogade 6D, 1620 København V</p>
     </footer>
     <script src="../scripts/main.js"></script>
-  </body>
 </html>

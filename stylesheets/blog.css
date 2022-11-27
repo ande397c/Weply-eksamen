@@ -1,0 +1,148 @@
+main {
+  margin: 0 1rem;
+}
+
+#blog_header h1 {
+  text-align: center;
+  margin-top: 0.5rem;
+}
+
+#blog_header h3 {
+  text-align: center;
+  margin: 0.5rem 0;
+}
+
+#blog_header img {
+  max-width: 15rem;
+  max-height: 15rem;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#blogs_content {
+  display: flex;
+  gap: 3rem;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 3rem;
+}
+
+.blog {
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: 0 1rem 2rem rgb(0 0 0 / 10%);
+  transition: cubic-bezier(0.165, 0.84, 0.44, 1) 1s;
+  max-width: 22rem;
+  margin-bottom: 1.5rem;
+  flex-grow: 1;
+}
+
+.blog:hover {
+  box-shadow: 7px 7px 10px 1px rgba(122, 120, 120, 0.25);
+}
+
+.blog img {
+  display: block;
+  width: 100%;
+  height: 220px;
+  object-fit: cover;
+}
+
+.blog_text {
+  padding: 1.5rem;
+}
+
+.blog_text h5 {
+  color: var(--dark-blue);
+  margin-bottom: 1rem;
+  font-size: 1.1rem;
+  letter-spacing: var(--letter-spacing-mg);
+  font-weight: var(--font-weight-medium);
+}
+
+.blog_text h4 {
+  font-size: 1.5rem;
+  font-weight: 500;
+  line-height: 1.6rem;
+  color: var(--black);
+  letter-spacing: var(--letter-spacing-mg);
+}
+
+/* .......... Card Button ................ */
+
+.read_more_blog {
+  margin-top: 0.6rem;
+  padding: 10px 0;
+  color: var(--blue);
+  background: none;
+  display: inline-block;
+  cursor: pointer;
+  font-size: 1.1rem;
+  text-decoration: none;
+  border: none;
+  transition: cubic-bezier(0.215, 0.61, 0.355, 1) 0.2s;
+}
+
+.read_more_blog:after {
+  display: inline-block;
+  padding-left: 8px;
+  content: "\0279E";
+  -webkit-transition: transform 0.3s ease-out;
+  -moz-transition: transform 0.3s ease-out;
+  -ms-transition: transform 0.3s ease-out;
+  -o-transition: transform 0.3s ease-out;
+  transition: transform 0.3s ease-out;
+}
+
+.read_more_blog:hover::after {
+  -webkit-transform: translateX(5px);
+  -moz-transform: translateX(5px);
+  -ms-transform: translateX(5px);
+  -o-transform: translateX(5px);
+  transform: translateX(5px);
+}
+
+.blog_ui {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 1rem 0;
+  gap: 1.2rem;
+}
+
+.blog_ui > span {
+  font-size: 1.3rem;
+  border-radius: 50%;
+  border: 1px solid var(--black);
+  width: 2rem;
+  height: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.blog_pages {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.blog_pages > div {
+  width: 2rem;
+  height: 2rem;
+
+  padding: 0.3rem;
+  text-align: center;
+}
+
+.active_page {
+  background-color: #eeeeee;
+  border: 1px solid #000;
+}
+
+@media (min-width: 700px) {
+  #blog_header img {
+    max-width: 30rem;
+    max-height: 30rem;
+  }
+}

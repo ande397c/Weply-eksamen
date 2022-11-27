@@ -2,20 +2,31 @@ const navbarMenu = document.getElementById("navbar");
 const burgerMenu = document.getElementById("burger");
 const overlayMenu = document.querySelector(".overlay");
 
+window.addEventListener("load", setup);
+
+function setup() {
+  // Initialize Event Listeners
+  burgerMenu.addEventListener("click", toggleMenu);
+  overlayMenu.addEventListener("click", toggleMenu);
+  navbarMenu.addEventListener("click", toggleSubMenu);
+  window.addEventListener("resize", resizeWindow);
+}
+
 // Show and Hide Navbar Function
-const toggleMenu = () => {
+function toggleMenu() {
   navbarMenu.classList.toggle("active");
   overlayMenu.classList.toggle("active");
-};
+}
 
 // Collapsible Mobile Submenu Function
-const collapseSubMenu = () => {
+
+function collapseSubMenu() {
   navbarMenu.querySelector(".menu-dropdown.active .submenu").removeAttribute("style");
   navbarMenu.querySelector(".menu-dropdown.active").classList.remove("active");
-};
+}
 
 // Toggle Mobile Submenu Function
-const toggleSubMenu = (e) => {
+function toggleSubMenu(e) {
   if (e.target.hasAttribute("data-toggle") && window.innerWidth <= 992) {
     e.preventDefault();
     const menuDropdown = e.target.parentElement;
@@ -35,7 +46,7 @@ const toggleSubMenu = (e) => {
       subMenu.style.maxHeight = subMenu.scrollHeight + "px";
     }
   }
-};
+}
 
 // Fixed Resize Window Function
 const resizeWindow = () => {
@@ -48,9 +59,3 @@ const resizeWindow = () => {
     }
   }
 };
-
-// Initialize Event Listeners
-burgerMenu.addEventListener("click", toggleMenu);
-overlayMenu.addEventListener("click", toggleMenu);
-navbarMenu.addEventListener("click", toggleSubMenu);
-window.addEventListener("resize", resizeWindow);
