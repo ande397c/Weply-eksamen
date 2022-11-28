@@ -40,11 +40,11 @@
               </ul>
             </li>
 
-            <li class="menu-item"><a href="#" class="menu-link">Om os</a></li>
+            <li class="menu-item"><a href="../pages/about.html" class="menu-link">Om os</a></li>
 
-            <li class="menu-item"><a href="#" class="menu-link">Impact</a></li>
+            <li class="menu-item"><a href="../pages/impact.html" class="menu-link">Impact</a></li>
 
-            <li class="menu-item"><a href="#" class="menu-link">Blog</a></li>
+            <li class="menu-item"><a href="../pages/blog.html" class="menu-link">Blog</a></li>
           </ul>
 
           <div class="btn_container">
@@ -68,25 +68,27 @@
           <p>Vi opretter din chat, så snart vi kommer i kontakt med dig. Derfra tager det kun 5 minutter at komme i gang.</p>
 
           <div class="field_container">
-            <input class="floating-input" type="text" placeholder=" " required />
-            <label>Navn</label>
+            <input class="floating-input" type="text" placeholder=" " required name="navn" />
+            <label for="navn">Navn</label>
           </div>
 
           <article id="form-phone-section">
             <div class="field_container">
-              <input class="floating-input" placeholder=" " required type="number" />
-              <label>Landkode</label>
+              <input class="floating-input" placeholder=" " required type="tel" name="landkode" minlength="1" maxlengthlength="4" />
+
+              <label for="landkode">Landkode</label>
             </div>
 
             <div class="field_container">
-              <input class="floating-input" type="number" placeholder=" " required />
-              <label>Telefon nr.</label>
+              <input class="floating-input" type="tel" placeholder=" " required name="phonenumber" minlength="8" maxlengthlength="14" id="phone" />
+
+              <label for="phonenumber">Telefon nr.</label>
             </div>
           </article>
 
           <div class="field_container">
-            <input class="floating-input" type="text" placeholder=" " />
-            <label>Din hjemmeside</label>
+            <input class="floating-input" type="url" placeholder=" " name="url" />
+            <label for="url">Din hjemmeside</label>
           </div>
 
           <label class="checkbox"> <input type="checkbox" id="checkbox" /> Jeg accepterer, at I bruger mine oplysninger til at kontakte mig. </label>
@@ -98,28 +100,31 @@
           <div id="bullets">
             <div class="bullet">
               <img src="../img/bullet.svg" alt="" />
-              <p>Vores chatkonsulenter håndterer chatten 24/7</p>
+              <h4>Vores chatkonsulenter håndterer chatten 24/7</h4>
             </div>
 
             <div class="bullet">
               <img src="../img/bullet.svg" alt="" />
-              <p>Vi sender varme leads i hele prøveperioden</p>
+              <h4>Vi sender varme leads i hele prøveperioden</h4>
             </div>
 
             <div class="bullet">
               <img src="../img/bullet.svg" alt="" />
-              <p>Prøveperioden er 100% uforpligtende</p>
+              <h4>Prøveperioden er 100% uforpligtende</h4>
             </div>
 
             <div class="bullet">
               <img src="../img/bullet.svg" alt="" />
-              <p>Vejledning af Customer Success Manager </p>
+              <h4>Vejledning af Customer Success Manager</h4>
             </div>
 
-               <div class="bullet">
+            <div class="bullet">
               <img src="../img/bullet.svg" alt="" />
-              <p>Hver 3. chat blev til et lead i 2021</p>
+              <h4>Hver 3. chat blev til et lead i 2021</h4>
             </div>
+          </div>
+          <div class="trustpilot_container">
+            <img src="https://weply.dk/wp-content/uploads/Trustpilot-5-stars_Tegnebr%C3%A6t-1.png" alt="" />
           </div>
         </article>
       </section>
@@ -210,4 +215,6 @@
       <p>© Weply A/S 2022 | CVR 35414800 | Vesterbrogade 6D, 1620 København V</p>
     </footer>
     <script src="../scripts/main.js"></script>
+    <script src="../scripts/signup.js"></script>
+  </body>
 </html>
