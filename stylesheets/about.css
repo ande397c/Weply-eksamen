@@ -1,3 +1,9 @@
-* {
-  color: blue;
+img {
+  height: auto;
+  width: 100%;
+}
+
+.text_container {
+  margin-inline: 10%;
+  margin-bottom: 1rem;
 }
