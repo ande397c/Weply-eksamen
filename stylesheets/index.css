@@ -73,35 +73,32 @@ h2 {
 
 /* section 1 */
 
-.section_1 .bg_pic_container{
+.section_1 .bg_pic_container {
   display: grid;
   grid-template-columns: 1fr 2fr 2fr 1fr;
   grid-template-rows: 1fr 1fr 1fr 1fr;
   margin-left: 2rem;
 }
 
-
-
 .section_1 .bg_grid {
-  grid-column:1/5;
+  grid-column: 1/5;
   grid-row: 2/5;
 }
 iframe {
   grid-column: 2/4;
-grid-row: 1/4;
-z-index: 1;
-width: 100%;
-height: auto;
-border-radius: 0.3rem;
+  grid-row: 1/4;
+  z-index: 1;
+  width: 100%;
+  height: auto;
+  border-radius: 0.3rem;
 }
-
 
 /* Section 2 */
 .section_2 .blobs {
   border-radius: 0 25px 25px 0;
 }
 
-.section_2 .bg_pic_container{
+.section_2 .bg_pic_container {
   display: grid;
   grid-template-columns: 1fr 2rem;
   grid-template-rows: 2rem 1fr 2rem;
@@ -109,8 +106,7 @@ border-radius: 0.3rem;
   max-width: 70%;
 }
 
-
-.section_2 .bg_grid{
+.section_2 .bg_grid {
   grid-column: 1/3;
   grid-row: 1/4;
 }
@@ -120,8 +116,7 @@ border-radius: 0.3rem;
   grid-row: 2/3;
   z-index: 1;
   max-width: 60%;
-justify-self: end;
-
+  justify-self: end;
 }
 
 .section_2 p {
@@ -235,8 +230,6 @@ justify-self: end;
 /***************** Tablet ************************************************************************************************************************/
 
 @media (min-width: 700px) {
-  
-  
   /* Hero section */
 
   /* Mobil hero img, gets a display: none on tablet & desktop view */
@@ -244,24 +237,22 @@ justify-self: end;
     display: none;
   }
 
+  .hero_section .bg_grid {
+    grid-column: 4/6;
+    grid-row: 1/4;
+  }
 
-.hero_section .bg_grid{
-  grid-column: 4/6;
-  grid-row: 1/4;
-}
-
-.hero_test{
-  display: block;
+  .hero_test {
+    display: block;
     grid-column-start: 3;
     grid-column-end: 5;
     grid-row: 1 / 6;
     z-index: 1;
     align-self: end;
     max-width: 19rem;
-  justify-self: center;
-  
+    justify-self: center;
   }
-  
+
   .hero_section {
     display: grid;
     grid-template-columns: 3% 3fr 1fr 1fr 1fr;
@@ -344,16 +335,15 @@ justify-self: end;
   .section_1 .text_container {
     margin: 0;
     grid-column-start: 2;
-   grid-row: 1/5;   
-   max-width: 28rem;
+    grid-row: 1/5;
+    max-width: 28rem;
   }
- 
-  .section_1 .bg_pic_container{
+
+  .section_1 .bg_pic_container {
     grid-column: 3/4;
     grid-row: 2/6;
-    margin-left:1rem ;
+    margin-left: 1rem;
   }
- 
 
   .section_1 .section_button {
     grid-column-start: 2;
@@ -376,30 +366,26 @@ justify-self: end;
     margin: 0;
     margin-right: 1.4rem;
     max-width: 28rem;
-
   }
 
-  .section_2 .bg_pic_container{
+  .section_2 .bg_pic_container {
     grid-row: 1/3;
     margin-right: 0;
-    max-width:none;
+    max-width: none;
     grid-template-columns: 3fr 2rem 1fr;
     grid-template-rows: 2rem 1fr 2rem;
-  
   }
 
-.section_2 .bg_pic_container .pic {
-  grid-column: 1/2;
-  grid-row: 2/3;
-  max-width: 66%;
-  
-}
+  .section_2 .bg_pic_container .pic {
+    grid-column: 1/2;
+    grid-row: 2/3;
+    max-width: 66%;
+  }
 
-.section_2 .bg_pic_container .bg_grid {
-  grid-column: 1/3;
-  grid-row: 1/4;
-}
-
+  .section_2 .bg_pic_container .bg_grid {
+    grid-column: 1/3;
+    grid-row: 1/4;
+  }
 
   .section_2 .section_button {
     grid-column-start: 3;
@@ -438,36 +424,31 @@ justify-self: end;
 /************************************************************* Desktop styling ******************************************************/
 
 @media (min-width: 1000px) {
-  
-   .hero_section .bg_grid{
+  .hero_section .bg_grid {
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows:1fr ;
+    grid-template-rows: 1fr;
     grid-column: 4/6;
+  }
 
-   }
-
-   .hero_test {
+  .hero_test {
     display: block;
   }
 
+  .hero_test {
+    grid-column-start: 3;
+    grid-column-end: 5;
+    grid-row: 1 / 6;
+    z-index: 1;
+    align-self: end;
+    max-width: 19rem;
+    justify-self: center;
+  }
 
-.hero_test{
-  grid-column-start: 3;
-  grid-column-end: 5;
-  grid-row: 1 / 6;
-  z-index: 1;
-  align-self: end;
-  max-width: 19rem;
-justify-self: center;
+  .hero_section .bg_grid {
+    grid-row: 1 / 5;
+  }
 
-}
-
-.hero_section .bg_grid{
-  grid-row: 1 / 5;
-}
-
-  
   .section_1 {
     margin-top: rem;
   }
@@ -477,13 +458,10 @@ justify-self: center;
     line-height: unset;
   }
   .hero_section {
-   
-
     display: grid;
     grid-template-columns: 3% 3fr 1fr 1fr 1fr;
-    grid-template-rows: auto 1fr 1fr 1fr ;
+    grid-template-rows: auto 1fr 1fr 1fr;
     gap: 0.5rem;
-
   }
 
   .hero_top_content {
@@ -514,11 +492,8 @@ justify-self: center;
     grid-row-start: 1;
     grid-row-end: 4;
   }
- 
 
   /* Section 1 */
-
- 
 
   .section_1 {
     grid-template-rows: 1fr 4fr 1fr 1fr 1fr;
@@ -526,22 +501,19 @@ justify-self: center;
 
   .section_1 .text_container {
     margin: 0;
-      max-width: 38rem;
-      grid-row: 1/3;
-
+    max-width: 38rem;
+    grid-row: 1/3;
   }
-.section_1 .bg_pic_container {
-  grid-row: 1/6;
-  margin-left: 0;
-  grid-template-columns: 1fr 3fr 3fr 1fr;
-grid-template-rows: 1fr 3fr 3fr 2fr;
+  .section_1 .bg_pic_container {
+    grid-row: 1/6;
+    margin-left: 0;
+    grid-template-columns: 1fr 3fr 3fr 1fr;
+    grid-template-rows: 1fr 3fr 3fr 2fr;
+  }
 
-}
- 
-iframe{
-  height: 100%;;
-}
- 
+  iframe {
+    height: 100%;
+  }
 
   /* Section 2 */
 
@@ -555,7 +527,7 @@ iframe{
     grid-column-start: 3;
     grid-row-start: 1;
     grid-row-end: 3;
-justify-self: center;
+    justify-self: center;
     margin: 0;
   }
 
