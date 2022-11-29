@@ -3,7 +3,41 @@ img {
   width: 100%;
 }
 
+/***************** Mobil ************************************************************************************************************************/
+
+/* hero styling */
+
+.hero_section {
+  background-image: url("../img/bgd_placeholder.png");
+  background-size: contain;
+}
+
+.hero_text {
+  color: white;
+  text-align: center;
+  padding: 1rem;
+}
+
 .text_container {
   margin-inline: 10%;
   margin-bottom: 1rem;
+}
+
+h2 {
+  margin-bottom: 1rem;
+}
+
+button {
+  display: grid;
+  justify-content: center;
+  margin-top: 1rem;
+}
+
+article {
+  margin-inline: 10%;
+  margin-bottom: 1rem;
+}
+
+.bullets_wrapper {
+  display: flex;
 }
