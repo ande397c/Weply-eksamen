@@ -430,6 +430,9 @@ iframe {
     grid-template-rows: 1fr;
     grid-column: 4/6;
   }
+  .hero_test {
+    display: block;
+  }
 
   .hero_test {
     display: block;
