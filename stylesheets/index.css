@@ -189,8 +189,6 @@ h2 {
 /***************** Tablet ************************************************************************************************************************/
 
 @media (min-width: 730px) {
-  
-  
   /* Hero section */
 
   /* Mobil hero img, gets a display: none on tablet & desktop view */
@@ -198,24 +196,22 @@ h2 {
     display: none;
   }
 
+  .hero_section .bg_grid {
+    grid-column: 4/6;
+    grid-row: 1/4;
+  }
 
-.hero_section .bg_grid{
-  grid-column: 4/6;
-  grid-row: 1/4;
-}
-
-.hero_test{
-  display: block;
+  .hero_test {
+    display: block;
     grid-column-start: 3;
     grid-column-end: 5;
     grid-row: 1 / 6;
     z-index: 1;
     align-self: end;
     max-width: 19rem;
-  justify-self: center;
-  
+    justify-self: center;
   }
-  
+
   .hero_section {
     display: grid;
     grid-template-columns: 3% 3fr 1fr 1fr 1fr;
@@ -375,45 +371,39 @@ h2 {
 /************************************************************* Desktop styling ******************************************************/
 
 @media (min-width: 1000px) {
-  
-   .hero_section .bg_grid{
+  .hero_section .bg_grid {
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows:1fr ;
-grid-column: 4/6;
-
-  
-   }
+    grid-template-rows: 1fr;
+    grid-column: 4/6;
+  }
   /* grid-row-start: 1;
     grid-row-end: 4;  */
 
-
-   .hero_test {
+  .hero_test {
     display: block;
   }
 
+  .hero_test {
+    grid-column-start: 3;
+    grid-column-end: 5;
+    grid-row: 1 / 6;
+    z-index: 1;
+    align-self: end;
+    max-width: 19rem;
+    justify-self: center;
+  }
 
-.hero_test{
-  grid-column-start: 3;
-  grid-column-end: 5;
-  grid-row: 1 / 6;
-  z-index: 1;
-  align-self: end;
-  max-width: 19rem;
-justify-self: center;
+  .hero_section .bg_grid {
+    grid-row: 1 / 5;
+  }
 
-}
-
-.hero_section .bg_grid{
-  grid-row: 1 / 5;
-}
-
-/* .hero_test img{
+  /* .hero_test img{
   width: 100%;
 
 }
    */
-  
+
   .section_1 {
     margin-top: rem;
   }
@@ -430,9 +420,8 @@ justify-self: center;
 
     display: grid;
     grid-template-columns: 3% 3fr 1fr 1fr 1fr;
-    grid-template-rows: auto 1fr 1fr 1fr ;
+    grid-template-rows: auto 1fr 1fr 1fr;
     gap: 0.5rem;
-
   }
 
   .hero_top_content {
@@ -463,7 +452,6 @@ justify-self: center;
     grid-row-start: 1;
     grid-row-end: 4;
   }
- 
 
   /* Section 1 */
 

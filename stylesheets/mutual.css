@@ -231,6 +231,10 @@ a {
   margin-bottom: var(--spacing-7);
 }
 
+.section {
+  margin-bottom: var(--spacing-7);
+}
+
 /** -- Komponenter -- **/
 
 .bth_box {
