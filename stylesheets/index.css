@@ -383,6 +383,9 @@ h2 {
   .hero_test {
     display: block;
   }
+  .hero_test {
+    display: block;
+  }
 
   .hero_test {
     grid-column-start: 3;
