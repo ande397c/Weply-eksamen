@@ -185,7 +185,7 @@ h1 {
   font-size: var(--font-size-xxl);
   font-weight: var(--font-weight-medium);
   color: var(--header)-color;
-  line-height: 2.2rem;
+  /* line-height: 2.2rem; */
 }
 
 h2 {
@@ -223,18 +223,23 @@ p {
   color: var(--paragraph-primary-color);
 }
 
+
+.section {
+    margin-bottom: var(--spacing-7);
+  }
+
 /** -- Komponenter -- **/
 
 .bth_box {
   width: auto;
-  padding-block: 2rem;
-  padding-inline: 3rem;
+  padding-block: var(--spacing-7);
+  padding-inline:var(--spacing-9);
 }
 .bth_box_W {
   background-color: var(--dark-gray);
   width: auto;
-  padding-block: 2rem;
-  padding-inline: 3rem;
+  padding-block: var(--spacing-7);
+  padding-inline:var(--spacing-9);
 }
 
 .btn_primary {
@@ -453,9 +458,6 @@ p {
   background-color: rgba(0, 0, 0, 0.65);
 }
 
-.section {
-  margin-bottom: 2rem;
-}
 
 /* -- Header slut -- */
 
