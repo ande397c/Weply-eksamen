@@ -18,6 +18,15 @@ img {
   padding: 1rem;
 }
 
+/* bullets */
+
+.bullet {
+  text-align: center;
+  padding: 2rem;
+}
+
+/* Section 1, 2 & 3 styling  */
+
 .text_container {
   margin-inline: 10%;
   margin-bottom: 1rem;
@@ -38,6 +47,16 @@ article {
   margin-bottom: 1rem;
 }
 
-.bullets_wrapper {
-  display: flex;
+/* kontakt info styling*/
+.info_bullet {
+  margin-inline: 10%;
+  margin-bottom: 1rem;
+}
+
+/***************** Tablet ************************************************************************************************************************/
+@media (min-width: 730px) {
+}
+
+/************************************************************* Desktop styling ******************************************************/
+@media (min-width: 1000px) {
 }
