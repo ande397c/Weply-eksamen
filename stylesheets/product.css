@@ -20,16 +20,18 @@ img {
     margin-block: 2rem;
   }
   .hero_section>* {
-    flex: 1 1 160px;
+    flex: 1 1 195px;
 }
 
 .hero_h1 {
     margin-right: 1rem;
+    align-self: center;
 
 }
 
 .hero_pic_mobile{
     margin-right: 2rem;
+    max-width: 39%;
 }
 
 /* Bullet hero styling */
@@ -54,11 +56,12 @@ img {
 .bullet{
     display: flex;
     margin-bottom: 1rem;
+    justify-content: center;
 }
 
   .bullet img {
-    width: 1.5rem;
-    height: 1.5rem; 
+    width: auto;
+    height: auto; 
     align-self: center;
     margin-right: 0.5rem;
 
@@ -141,7 +144,7 @@ margin-inline: 30%;
     /* Hero styling */
     .hero_section {
         display: grid;
-        grid-template-columns:  1fr 1fr 3%;
+        grid-template-columns:  3% 3fr 1fr 1fr 1fr;
         grid-template-rows: 3fr;
         gap: 0.5rem;
         margin-left: 0;
@@ -188,6 +191,9 @@ margin-inline: 30%;
 
 .section_1 .text_container{
     grid-column: 2/3;
+    max-width: 28rem;   
+    
+
 }
 
 
@@ -206,7 +212,9 @@ margin-inline: 30%;
 }
 .section_2 .text_container{
     grid-column: 3/4;
-    
+    max-width:20rem;
+    margin-top: 3rem;
+
 }
 .section_2 .section_button{
     grid-column: 3/4;
@@ -227,7 +235,7 @@ margin-inline: 30%;
   .section_3 .text_container{
     grid-column: 2/4;
     grid-row: 1/2;
-    margin-right: 10rem;
+    max-width:45rem;
   }
 
   .weply_vs_andre {
@@ -259,9 +267,7 @@ margin-inline: 30%;
     grid-column: 3/4;
     margin-left: 0;
 }
-.white_p{
-    
-}
+
 }
 
 
@@ -280,23 +286,25 @@ margin-inline: 30%;
 /* hero styling  */
 
 .hero_section{
-    grid-template-rows: 1fr 1fr 2fr;
+    grid-template-rows: 1fr 1fr 1fr;
 }
 .hero_section .blobs {
-    border-radius: 0 20px 20px 0;
+    border-radius: 0 25px 25px 0;
 }
 .hero_section .bg_grid {
     grid-column: 1/2;
     grid-row:1/4;
     max-width: 70%;
+    margin-block:1rem ;
 }
 .placeholder_pic{
  grid-column: 1/2;
-grid-row: 2/4;
+grid-row: 1/4;
 z-index: 1;
 max-width: 72%;
 align-self: baseline;
 justify-self: center;
+align-self: center;
 }
 .bullet_container{
     display: grid;
@@ -307,7 +315,10 @@ gap: 1rem;
 .hero_h1 {
     margin-top: 2rem;
     margin-left:2rem;
-    max-width: 21rem
+    max-width: 30rem;
+    justify-self: unset;
+    line-height: 3.5rem;
+
 }
 
 .bullet_container {
@@ -317,6 +328,116 @@ gap: 1rem;
 }
 .bullet_text{
     align-self: center;
+}
+
+
+/* section 1 */
+
+.section_1{
+ grid-template-rows: 1fr 1fr 1fr;
+}
+.section_1 .text_container{
+max-width: 28rem;   
+grid-row: 1/4;
+margin-block: 3rem;
+}
+
+.section_1 .bg_grid{
+grid-column: 3/4;
+grid-row: 1/4;
+}
+
+
+
+/* Section 2 */
+
+.section_2 .blobs{
+    border-radius: 0 25px 25px 0;
+}
+.section_2{
+    grid-template-rows: 1fr 1fr 1fr;
+   }
+
+.section_2 .bg_grid{
+    grid-column: 1/2;
+    grid-row: 1/4;
+  }
+  .section_2 .text_container {
+    grid-row: 1/3;
+    justify-self: center;
+  }
+  .section_2 .section_button{
+    margin-left: 11.3rem;
+    justify-self: stretch;
+  }
+
+
+
+  /* section 3  */
+
+  .weply_vs_andre{
+    margin-top: 2rem;
+    
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 2fr 2fr 2fr;
+  }
+
+  .weply_vs_andre h3 {
+    grid-column:1/4;
+    grid-row: 1/2;
+  }
+.weply_vs_andre .bg_grid{
+    grid-row: 1/5;
+    grid-column: 3/4;
+}
+
+/* Section 4 */
+
+
+.action_cards h2 {
+    margin-bottom: 2rem;
+}
+
+
+.action_cards{
+    
+    grid-template-columns: 1fr 9% 1fr;
+}
+
+.gratis_prøve_card_left{
+    background-image: none;
+    grid-row:2/3;
+    z-index:1;
+    justify-self: center;
+    padding-left: 0;
+}
+
+.white_p{
+    max-width: 20rem;
+}
+
+.left{
+ grid-column: 1/2;
+grid-row: 2/3;
+}
+
+.left .blobs{
+    border-radius: 0 25px 25px 0;
+
+}
+
+.gratis_prøve_card_right{
+    background-image: none;
+    grid-row: 2/3;
+    z-index: 1;
+    justify-self: center;
+
+}
+
+.right{
+    grid-column: 3/4;
+    grid-row: 2/3;
 }
 
 }
