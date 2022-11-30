@@ -48,15 +48,53 @@ article {
 }
 
 /* kontakt info styling*/
+.section_4 {
+  color: white;
+}
+
 .info_bullet {
   margin-inline: 10%;
   margin-bottom: 1rem;
 }
 
-/***************** Tablet ************************************************************************************************************************/
-@media (min-width: 730px) {
+.info_bullet_wrapper {
+  margin-bottom: 3rem;
 }
 
+.section_4 {
+  background-image: url(../img/bgd_placeholder.png);
+  background-size: cover;
+}
+
+/***************** Tablet ************************************************************************************************************************/
+@media (min-width: 730px) {
+  .hero_section {
+    display: flex;
+    justify-content: space-evenly;
+  }
+
+  .section_1 {
+    display: flex;
+  }
+
+  .bullets_wrapper {
+    display: flex;
+    justify-content: space-evenly;
+  }
+
+  .Info_title {
+    text-align: center;
+  }
+
+  .section_3 {
+    display: flex;
+  }
+
+  .info_wrapper {
+    display: flex;
+    justify-content: space-evenly;
+  }
+}
 /************************************************************* Desktop styling ******************************************************/
 @media (min-width: 1000px) {
 }
