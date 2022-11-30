@@ -212,6 +212,22 @@ h2 {
     justify-self: center;
   }
 
+  .hero_section .bg_grid {
+    grid-column: 4/6;
+    grid-row: 1/4;
+  }
+
+  .hero_test {
+    display: block;
+    grid-column-start: 3;
+    grid-column-end: 5;
+    grid-row: 1 / 6;
+    z-index: 1;
+    align-self: end;
+    max-width: 19rem;
+    justify-self: center;
+  }
+
   .hero_section {
     display: grid;
     grid-template-columns: 3% 3fr 1fr 1fr 1fr;
