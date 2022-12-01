@@ -183,8 +183,8 @@ h1 {
   font-size: var(--font-size-xxl);
   font-weight: var(--font-weight-medium);
   color: var(--header);
-  line-height: 2.2rem;
-  letter-spacing: var(--letter-spacing-md);
+  /* line-height: 2.2rem;
+  letter-spacing: var(--letter-spacing-md); */
 }
 
 h2 {
@@ -230,7 +230,7 @@ a{
 }
 
 .section {
-    margin-bottom: var(--spacing-7);
+    margin-bottom: var(--spacing-12);
   }
 
 /** -- Komponenter -- **/
@@ -938,9 +938,6 @@ footer hr {
     line-height: unset;
   }
 
-  .section {
-    margin-bottom: 4rem;
-  }
 
   .btn_container {
     display: flex;
@@ -1007,9 +1004,7 @@ footer hr {
 /* desktop */
 
 @media (min-width: 1000px) {
-  .section {
-    margin-bottom: 6rem;
-  }
+ 
 
   
 }
