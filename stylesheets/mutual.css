@@ -224,6 +224,12 @@ p {
   color: var(--paragraph-primary-color);
 }
 
+a{
+    font-family: "montserrat", serif;
+    font-size: var(--font-size-ba);
+
+
+}
 
 .section {
     margin-bottom: var(--spacing-7);
@@ -633,23 +639,53 @@ rotate: 90deg;
 /* -- Footer  -- */
 
 footer {
-  /* background-image: url(footer-bg.png);
-  background-position: center;
-  background-repeat: no-repeat;
-  height: 140vh;
-  width: 100vh; */
+ display: grid;
+ grid-template-columns: 1fr;
+ grid-template-rows: 1fr;
 
-  background-color: rgb(11, 10, 10);
+  /* background-color: rgb(11, 10, 10); */
 
-  padding: 0 2rem;
-  padding-bottom: 7rem;
+  /* padding: 0 2rem;
+  padding-bottom: 7rem; */
 }
 
+
+
+footer .bg_grid  {
+  grid-column: 1/2;
+  grid-row: 1/5;
+  z-index: -1;
+  display: block;
+}
+
+footer .bg_grid .blobs{
+  border-radius: 0;
+}
 #footer_column_grid {
   display: grid;
   justify-content: center;
+  padding: 0 2rem;
+/* padding-bottom: 7rem; */
+
+grid-column: 1/2;
+grid-row: 1/2;
 }
 
+#footer_bottom_grid{
+  grid-column: 1/2;
+  grid-row: 2/3;
+
+}
+
+hr{
+  grid-column: 1/2;
+  grid-row: 3/4;
+}
+.footer_bottom_p{
+  grid-column: 1/2;
+  grid-row:4/5 ;
+
+}
 footer img {
   width: 100%;
   height: 100%;
@@ -664,7 +700,6 @@ footer h3 {
 
 footer p {
   color: var(--white);
-  text-align: center;
 }
 
 #footer_contact {
@@ -678,7 +713,7 @@ footer p {
 
 #footer_contact li a {
   color: var(--white);
-  font-size: 1.2rem;
+  
   text-decoration: none;
 }
 
@@ -697,6 +732,8 @@ footer p {
 #footer-input > label {
   color: var(--white);
   opacity: 0.7;
+  font-family: "Open Sans", sans-serif;
+  font-size: var(--font-size-sm);
 }
 
 [type="checkbox"] {
@@ -710,8 +747,8 @@ footer p {
 }
 .input_container input {
   border: 1px solid var(--white);
-  border-radius: 7px;
-  height: 25px;
+  border-radius: 3px;
+  height: 2rem;
   padding-left: 10px;
   min-width: 140px;
   max-width: 200px;
@@ -722,8 +759,8 @@ footer p {
 
 .input_container button {
   border: 1px solid var(--white);
-  border-radius: 7px;
-  height: 25px;
+  border-radius: 3px;
+  height: 2rem;
   background: transparent;
   width: 95px;
   margin-left: 0.3rem;
@@ -746,7 +783,7 @@ footer p {
 
 #try_weply li a {
   color: #fff;
-  font-size: 1.2rem;
+ 
   text-decoration: none;
 }
 
@@ -789,14 +826,18 @@ footer hr {
   font-size: 0.85rem;
   text-align: center;
 }
-
+.footer_bottom_p{
+  text-align: center;
+  margin-bottom: 6rem;
+}
 /* -- Footer  slut -- */
 
 /* Media@ regler */
 
-/* tablet */
-
+/* -- Header styling -- */
 @media only screen and (max-width: 700px) {
+  
+
   .menu-item a {
     height: 4rem;
   }
@@ -881,6 +922,10 @@ footer hr {
     order: -1;
   }
 }
+/* -- Header slut -- */
+
+
+/* tablet   */
 
 @media (min-width: 700px) {
   h1 {
@@ -918,6 +963,8 @@ footer hr {
     display: none;
   }
 
+/* Footer styling */
+
   #footer_column_grid {
     grid-template-columns: repeat(3, 1fr);
     gap: 1rem;
@@ -944,6 +991,11 @@ footer hr {
     justify-content: space-around;
     align-items: center;
   }
+  .footer_bottom_p {
+    margin-bottom: 2rem;
+
+  }
+ 
 }
 
 /* desktop */
@@ -953,9 +1005,7 @@ footer hr {
     margin-bottom: 6rem;
   }
 
-  footer {
-    padding-bottom: 2rem;
-  }
+  
 }
 
 /************************************************************* General slut ****************************************************************************/

@@ -141,7 +141,25 @@ margin-inline: 30%;
 @media (min-width: 700px) {
 
 
+    .mobil {
+        display: none;
+    }
+    .bg_grid, .desktop{
+        display: block;
+    }
+
     /* Hero styling */
+
+    .hero_h1 {
+        margin-top: 2rem;
+        margin-left:2rem;
+        max-width: 30rem;
+        justify-self: unset;
+        line-height: 3.5rem;
+        grid-column: 3/6;
+        grid-row: 1/2;
+      }
+
     .hero_section {
         display: grid;
         grid-template-columns:  3% 3fr 1fr 1fr 1fr;
@@ -150,15 +168,34 @@ margin-inline: 30%;
         margin-left: 0;
       }
 
-.hero_pic_mobile{
+      .hero_section .blobs {
+        border-radius: 0 25px 25px 0;
+    }
+
+      .hero_section .bg_grid {
+        grid-column: 1/3;
+        grid-row:1/4;
+        max-width: 70%;
+        margin-block:1rem ;
+    }
+
+    .placeholder_pic{
+        grid-column: 2/3;
+       grid-row: 1/4;
+       z-index: 1;
+       max-width: 72%;
+       align-self: baseline;
+       justify-self: center;
+       align-self: center;
+       }
+
+
+/* .hero_pic_mobile{
     grid-column: 1/2;
     grid-row: 1/4;
-}
+} */
 
-.hero_h1{
-    grid-column: 2/3;
-    grid-row: 1/2;
-}
+
 
 .bullet_container{
     grid-column: 2/3;
@@ -279,33 +316,31 @@ margin-inline: 30%;
     .mobil {
         display: none;
     }
-    .bg_grid, .desktop{
-        display: block;
-    }
+   
 
 /* hero styling  */
 
 .hero_section{
     grid-template-rows: 1fr 1fr 1fr;
 }
-.hero_section .blobs {
+/* .hero_section .blobs {
     border-radius: 0 25px 25px 0;
-}
-.hero_section .bg_grid {
-    grid-column: 1/2;
+} */
+/* .hero_section .bg_grid {
+    grid-column: 1/3;
     grid-row:1/4;
     max-width: 70%;
     margin-block:1rem ;
-}
-.placeholder_pic{
- grid-column: 1/2;
+} */
+/* .placeholder_pic{
+ grid-column: 2/3;
 grid-row: 1/4;
 z-index: 1;
 max-width: 72%;
 align-self: baseline;
 justify-self: center;
 align-self: center;
-}
+} */
 .bullet_container{
     display: grid;
 grid-template-columns: 1fr 1fr;
@@ -319,12 +354,19 @@ gap: 1rem;
     justify-self: unset;
     line-height: 3.5rem;
 
+    grid-column: 3/6;
+    grid-row: 1/2;
+  }
+
 }
 
 .bullet_container {
     grid-row: 2/4;
     margin-inline:0;
     margin-left:2rem ;
+
+    grid-column: 3/6;
+    grid-row: 2/4;
 }
 .bullet_text{
     align-self: center;
@@ -440,4 +482,4 @@ grid-row: 2/3;
     grid-row: 2/3;
 }
 
-}
+
