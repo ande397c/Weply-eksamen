@@ -62,21 +62,6 @@ img {
   animation: slideDown 0.2s ease-in-out;
 
   display: block !important;
-  /* height: fit-content !important;
-  overflow: visible !important;
-  content: "\02C4" !important; */
-}
-
-/* .test span {
-  content: "";
-}
-
-.test span:after {
-  content: "\02C4";
-} */
-
-.test1 {
-  color: red;
 }
 
 @keyframes slideDown {
@@ -88,23 +73,37 @@ img {
   }
 }
 
-.test1 {
-  animation: slideUp 0.3s cubic-bezier(0.075, 0.82, 0.165, 1);
-
-  visibility: hidden !important;
-  /* height: fit-content !important;
-  overflow: visible !important;
-  content: "\02C4" !important; */
+#section_3 {
+  padding: 15px;
+  background-color: var(--dark-blue);
+  margin-right: 6%;
+  border-radius: 0 40px 40px 0;
+  margin-bottom: 4rem;
 }
 
-@keyframes slideUp {
-  from {
-    transform: translateY(0);
-  }
-  to {
-    transform: translateY(-100%);
-  }
+#section_3 h2,
+#section_3 p {
+  color: var(--white);
+  padding-block: 2rem;
 }
+
+.book_btn {
+  padding: 10px;
+  outline: none;
+  background: none;
+  border: 2px solid var(--white);
+  height: 2.5rem;
+  width: 12rem;
+  text-align: center;
+  line-height: 0rem;
+  color: var(--white);
+}
+
+.book_btn_container {
+  padding-bottom: 4rem;
+}
+
+/* --  @Media  --*/
 
 @media (min-width: 700px) {
   .text {
@@ -135,5 +134,25 @@ img {
 
   .dropdown_container {
     gap: 4rem;
+  }
+
+  #section_3 {
+    padding: 40px;
+    margin-right: 17em;
+  }
+
+  .book_btn_container {
+    display: flex;
+    justify-content: right;
+    width: 80%;
+  }
+
+  .book_btn_container {
+    padding-bottom: 10rem;
+  }
+
+  #section_3 h2,
+  #section_3 p {
+    max-width: 60%;
   }
 }
