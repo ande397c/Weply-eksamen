@@ -129,7 +129,8 @@ h2 {
   position: relative;
   overflow: hidden;
   height: 4rem;
-  margin-bottom: 2rem;
+  margin-block: 4rem;
+  box-shadow: 0 0 1rem rgba(0, 0, 0, 20%);
 }
 .kunde_banner img {
   height: 2rem;
