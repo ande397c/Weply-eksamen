@@ -111,7 +111,14 @@ h2 {
 .procent_tegn {
   font-size: var(--font-size-xl);
   font-family: "montserrat", serif;
+  color: inherit;
 }
+
+.procent_container {
+  display: flex;
+  align-items: center;
+}
+
 .data_bullet_container {
   margin-bottom: 1rem;
 }
