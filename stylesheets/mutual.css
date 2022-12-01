@@ -649,7 +649,11 @@ footer {
   padding-bottom: 7rem; */
 }
 
-
+.footer_icon {
+  width: 1.5rem;
+  height: 1.5rem;
+ 
+}
 
 footer .bg_grid  {
   grid-column: 1/2;
@@ -709,7 +713,10 @@ footer p {
 #footer_contact li {
   list-style-type: none;
   margin: 1rem 0;
+  display: flex;
+  gap: 0.5rem;
 }
+
 
 #footer_contact li a {
   color: var(--white);
@@ -832,7 +839,6 @@ footer hr {
 }
 /* -- Footer  slut -- */
 
-/* Media@ regler */
 
 /* -- Header styling -- */
 @media only screen and (max-width: 700px) {
