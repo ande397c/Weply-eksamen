@@ -1,0 +1,110 @@
+img {
+  height: auto;
+  width: 100%;
+}
+
+/***************** Mobil ************************************************************************************************************************/
+
+/* hero styling */
+
+.hero_section {
+  background-image: url("../img/bgd_placeholder.png");
+  background-size: contain;
+}
+
+.hero_text {
+  color: white;
+  text-align: center;
+  padding: 1rem;
+}
+
+/* bullets */
+
+.bullet {
+  text-align: center;
+  padding: 2rem;
+}
+
+/* Section 1, 2 & 3 styling  */
+
+.text_container {
+  margin-inline: 10%;
+  margin-bottom: 1rem;
+}
+
+h2 {
+  margin-bottom: 1rem;
+}
+
+button {
+  display: grid;
+  justify-content: center;
+  margin-top: 1rem;
+}
+
+article {
+  margin-inline: 10%;
+  margin-bottom: 1rem;
+}
+
+/* kontakt info styling*/
+.section_4 {
+  color: white;
+}
+
+.info_bullet {
+  margin-inline: 10%;
+  margin-bottom: 1rem;
+}
+
+.info_bullet_wrapper {
+  margin-bottom: 3rem;
+}
+
+.section_4 {
+  background-image: url(../img/bgd_placeholder.png);
+  background-size: cover;
+}
+
+.section_4 h5,
+.section_4 h3,
+.Info_title {
+  color: white;
+}
+
+.Info_title {
+  padding-top: 2rem;
+}
+
+/***************** Tablet ************************************************************************************************************************/
+@media (min-width: 730px) {
+  .hero_section {
+    display: flex;
+    justify-content: space-evenly;
+  }
+
+  .section_1 {
+    display: flex;
+  }
+
+  .bullets_wrapper {
+    display: flex;
+    justify-content: space-evenly;
+  }
+
+  .Info_title {
+    text-align: center;
+  }
+
+  .section_3 {
+    display: flex;
+  }
+
+  .info_wrapper {
+    display: flex;
+    justify-content: space-evenly;
+  }
+}
+/************************************************************* Desktop styling ******************************************************/
+@media (min-width: 1000px) {
+}
