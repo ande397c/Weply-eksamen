@@ -291,6 +291,37 @@ a {
   cursor: pointer;
 }
 
+.btn_header_primary {
+  background-color: var(--btn-primary-background-color);
+  border: none;
+  color: var(--white);
+  width: 6rem;
+  padding-block: var(--spacing-3);
+  padding-inline: var(--spacing-3);
+  font-size: var(--font-size-sm);
+  font-family: "montserrat", serif;
+  font-weight: var(--font-weight-medium);
+  text-decoration: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.btn_header_secondary {
+  background-color: var(--btn-white-background-color);
+  border: var(--border-blue-thin);
+  color: var(--btn-primary-background-color);
+  width: 6rem;
+  padding-block: var(--spacing-3);
+  padding-inline: var(--spacing-3);
+  font-size: var(--font-size-sm);
+  font-family: "montserrat", serif;
+  font-weight: var(--font-weight-medium);
+
+  text-decoration: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
 /* bg blob styling + animation */
 
 .blobs {
@@ -477,10 +508,7 @@ a {
 }
 
 .container {
-  max-width: 75rem;
   height: auto;
-  margin: 0 auto;
-  padding: 0 1.25rem;
 }
 
 .btn_container {
@@ -497,13 +525,16 @@ a {
   row-gap: 2rem;
   width: 100%;
   height: 3.5rem;
-  margin: 0 auto;
+  padding: 0 1rem;
 }
 
 .menu-item {
   position: relative;
   display: inline-block;
   margin-left: 1.5rem;
+  font-size: var(--font-size-md);
+  font-weight: var(--font-weight-regular);
+  font-family: "montserrat", serif;
 }
 .menu-link {
   display: flex;
@@ -512,8 +543,8 @@ a {
   -moz-column-gap: 0.25rem;
   column-gap: 0.25rem;
   font-family: inherit;
-  font-size: 1rem;
-  font-weight: 500;
+  font-size: var(--font-size-md);
+  font-weight: var(--font-weight-regular);
   line-height: inherit;
   cursor: pointer;
   color: var(--black);
@@ -567,6 +598,7 @@ a {
 .submenu-item {
   display: block;
   margin-top: 0.75rem;
+  font-size: var(--font-size-base);
 }
 .submenu-link {
   font-family: inherit;
@@ -830,7 +862,7 @@ footer hr {
 /* -- Footer  slut -- */
 
 /* -- Header styling -- */
-@media only screen and (max-width: 700px) {
+@media only screen and (max-width: 830px) {
   .menu-item a {
     height: 4rem;
   }
@@ -875,6 +907,7 @@ footer hr {
     transform: translateY(0px);
     box-shadow: none;
     background: transparent;
+    z-index: 10;
   }
 
   .menu {
@@ -919,7 +952,7 @@ footer hr {
 
 /* tablet   */
 
-@media (min-width: 700px) {
+@media (min-width: 830px) {
   h1 {
     line-height: unset;
   }
@@ -938,6 +971,12 @@ footer hr {
     opacity: 1;
     visibility: visible;
     transform: translateY(0);
+    z-index: 10;
+  }
+
+  .menu-link,
+  .menu-item {
+    font-size: var(--font-size-base);
   }
 
   .navbar {
@@ -987,6 +1026,9 @@ footer hr {
 /* desktop */
 
 @media (min-width: 1000px) {
+  .section {
+    margin-bottom: 6rem;
+  }
 }
 
 /************************************************************* General slut ****************************************************************************/
