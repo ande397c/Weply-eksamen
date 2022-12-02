@@ -183,8 +183,8 @@ h1 {
   font-size: var(--font-size-xxl);
   font-weight: var(--font-weight-medium);
   color: var(--header);
-  line-height: 2.2rem;
-  letter-spacing: var(--letter-spacing-md);
+  /* line-height: 2.2rem;
+  letter-spacing: var(--letter-spacing-md); */
 }
 
 h2 {
@@ -230,7 +230,7 @@ a{
 }
 
 .section {
-    margin-bottom: var(--spacing-7);
+    margin-bottom: var(--spacing-12);
   }
 
 /** -- Komponenter -- **/
@@ -649,7 +649,11 @@ footer {
   padding-bottom: 7rem; */
 }
 
-
+.footer_icon {
+  width: 1.5rem;
+  height: 1.5rem;
+ 
+}
 
 footer .bg_grid  {
   grid-column: 1/2;
@@ -709,7 +713,10 @@ footer p {
 #footer_contact li {
   list-style-type: none;
   margin: 1rem 0;
+  display: flex;
+  gap: 0.5rem;
 }
+
 
 #footer_contact li a {
   color: var(--white);
@@ -832,7 +839,6 @@ footer hr {
 }
 /* -- Footer  slut -- */
 
-/* Media@ regler */
 
 /* -- Header styling -- */
 @media only screen and (max-width: 700px) {
@@ -932,9 +938,6 @@ footer hr {
     line-height: unset;
   }
 
-  .section {
-    margin-bottom: 4rem;
-  }
 
   .btn_container {
     display: flex;
@@ -1001,9 +1004,7 @@ footer hr {
 /* desktop */
 
 @media (min-width: 1000px) {
-  .section {
-    margin-bottom: 6rem;
-  }
+ 
 
   
 }
