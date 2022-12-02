@@ -1,43 +1,35 @@
-h1 {
-  text-align: center;
-  margin-block: 2rem;
+/* -- login form -- */
+
+#form_container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
-main {
-  margin-block: 2rem;
-  margin-inline: 3%;
+#login_section {
+  margin-block: 3rem;
 }
 
-#content_wrapper {
-  display: grid;
-  justify-items: center;
-  gap: 1rem;
-}
-
-#bullets {
-  width: fit-content;
-}
-
-#signup_form {
+#login_form {
   width: 100%;
   max-width: 400px;
   border-radius: 10px;
-  padding: 10px;
+  padding: 20px;
   box-shadow: 0px 3px 8px 1px rgb(0 63 133 / 31%);
 }
 
-#signup_form h3 {
-  text-align: center;
+#login_form h3 {
+  text-align: left;
 }
 
-#signup_form p {
+#login_form p {
   text-align: left;
-  padding: 2.2rem 0.4rem;
+  padding: 1rem 0.4rem;
 }
 
 .field_container {
   position: relative;
-  margin-bottom: 1.4rem;
+  margin-block: 2rem;
 }
 
 .floating-input {
@@ -82,16 +74,11 @@ main {
   border-bottom: 1px solid var(--dark-blue);
 }
 
-#form-phone-section {
-  display: grid;
-  grid-template-columns: 1fr 3.5fr;
-  gap: 2rem;
-}
-
 .checkbox {
-  margin: 1rem 0;
   display: block;
-  font-size: 0.9rem;
+  font-size: var(--font-size-sm);
+  text-align: left;
+  font-family: "Open Sans", sans-serif;
 }
 
 .checkbox:hover {
@@ -106,53 +93,67 @@ main {
 [type="checkbox"]:hover {
   cursor: pointer;
 }
-
-/* ____ Bullets section _______ */
-
-#bullets_section {
-  margin: 0 0.3rem;
-}
-
-.bullet {
+.login_elements {
   display: flex;
   align-items: center;
-  margin: 1rem 0;
+  justify-content: space-between;
+  margin: 1.5rem 0;
 }
 
-.bullet img {
-  width: 1.8rem;
-  height: 1.8rem;
-  margin-right: 0.5rem;
+.login_elements a {
+  color: var(--light-gray);
+  font-size: var(--font-size-sm);
+  text-decoration: underline;
 }
 
-.bullet h4 {
-  font-weight: var(--font-weight-semibold);
+.login_btn_container {
+  display: flex;
+  justify-content: left;
 }
 
-.trustpilot_container > img {
-  max-width: 10rem;
+.account_message > a {
+  font-size: inherit;
 }
 
-.trustpilot_container {
-  margin-top: 2rem;
+#login_placeholder {
+  background-image: url(../img/login-placeholder.png);
+  background-repeat: no-repeat, no-repeat;
+  background-size: cover;
+  background-position: center center;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#login_placeholder img {
+  max-width: 25rem;
+}
+
+#login_placeholder {
+  display: none;
 }
 
 @media (min-width: 1000px) {
-  #content_wrapper {
+  main {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    /* align-items: center;
-    justify-content: center; */
-    margin-top: 2rem;
+    align-items: center;
   }
 
-  .bullet {
-    margin: 2rem 0;
+  #form_container,
+  #login_placeholder {
+    height: 100vh;
+    width: 100%;
   }
 
   #signup_form {
     min-width: 420px;
     max-width: 100%;
     padding: 30px;
+  }
+
+  #login_placeholder {
+    display: flex;
   }
 }

@@ -5,8 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="../stylesheets/mutual.css" />
-    <link rel="stylesheet" href="../stylesheets/signup.css" />
-    <title>Gratis Prøveperiode</title>
+    <link rel="stylesheet" href="../stylesheets/login.css" />
+    <title>Weply | Login</title>
   </head>
   <body>
     <!-- header start -->
@@ -57,79 +57,53 @@
     <!--Header slut-->
 
     <main>
-      <h1>
-        Konverter din trafik til leads – <br />
-        Prøv gratis i 7 dage
-      </h1>
+      <section id="form_container">
+        <article id="login_section">
+          <form id="login_form">
+            <h3>Velkommen!</h3>
 
-      <section id="content_wrapper">
-        <form id="signup_form">
-          <h3>Skriv dig op til en gratis prøveperiode</h3>
+            <p>Venligst indtast dine log-in oplysninger</p>
 
-          <p>Vi opretter din chat, så snart vi kommer i kontakt med dig. Derfra tager det kun 5 minutter at komme i gang.</p>
-
-          <div class="field_container">
-            <input class="floating-input" type="text" placeholder=" " required name="navn" />
-            <label for="navn">Navn</label>
-          </div>
-
-          <article id="form-phone-section">
             <div class="field_container">
-              <input class="floating-input" placeholder=" " required type="tel" name="landkode" minlength="1" maxlengthlength="4" />
-
-              <label for="landkode">Landkode</label>
+              <input class="floating-input" type="email" placeholder=" " required name="mail" />
+              <label for="mail">E-mail</label>
             </div>
 
             <div class="field_container">
-              <input class="floating-input" type="tel" placeholder=" " required name="phonenumber" minlength="8" maxlengthlength="14" id="phone" />
-
-              <label for="phonenumber">Telefon nr.</label>
-            </div>
-          </article>
-
-          <div class="field_container">
-            <input class="floating-input" type="url" placeholder=" " name="url" />
-            <label for="url">Din hjemmeside</label>
-          </div>
-
-          <label class="checkbox"> <input type="checkbox" id="checkbox" /> Jeg accepterer, at I bruger mine oplysninger til at kontakte mig. </label>
-
-          <button class="btn_primary">CTA</button>
-        </form>
-
-        <article id="bullets_section">
-          <div id="bullets">
-            <div class="bullet">
-              <img src="../img/bullet.svg" alt="" />
-              <h4>Vores chatkonsulenter håndterer chatten 24/7</h4>
+              <input class="floating-input" type="password" placeholder=" " name="kodeord" />
+              <label for="kodeord">Password</label>
             </div>
 
-            <div class="bullet">
-              <img src="../img/bullet.svg" alt="" />
-              <h4>Vi sender varme leads i hele prøveperioden</h4>
-            </div>
+            <article class="login_elements">
+              <label class="checkbox"> <input type="checkbox" id="checkbox" /> Forbliv logget ind </label>
 
-            <div class="bullet">
-              <img src="../img/bullet.svg" alt="" />
-              <h4>Prøveperioden er 100% uforpligtende</h4>
-            </div>
+              <a href="#">Glemt kodeord</a>
+            </article>
 
-            <div class="bullet">
-              <img src="../img/bullet.svg" alt="" />
-              <h4>Vejledning af Customer Success Manager</h4>
+            <div class="login_btn_container">
+              <button class="btn_primary">Login</button>
             </div>
-
-            <div class="bullet">
-              <img src="../img/bullet.svg" alt="" />
-              <h4>Hver 3. chat blev til et lead i 2021</h4>
-            </div>
-          </div>
-          <div class="trustpilot_container">
-            <img src="https://weply.dk/wp-content/uploads/Trustpilot-5-stars_Tegnebr%C3%A6t-1.png" alt="" />
-          </div>
+            <p class="account_message">Har du ikke et account? <a href="#">kontakt</a> os</p>
+          </form>
         </article>
       </section>
+
+      <section id="login_placeholder">
+        <img src="../img/Dashboard.png" alt="" />
+        <div class="bg_grid">
+          <div class="blobs">
+            <div class="blob big-blob"></div>
+            <div class="blob"></div>
+            <div class="blob"></div>
+            <div class="blob"></div>
+            <div class="blob"></div>
+            <div class="blob"></div>
+            <div class="blob"></div>
+          </div>
+        </div>
+      </section>
     </main>
+
     <footer>
       <div id="footer_column_grid">
         <article id="footer_contact">
@@ -216,6 +190,5 @@
       <p>© Weply A/S 2022 | CVR 35414800 | Vesterbrogade 6D, 1620 København V</p>
     </footer>
     <script src="../scripts/main.js"></script>
-    <script src="../scripts/signup.js"></script>
   </body>
 </html>
