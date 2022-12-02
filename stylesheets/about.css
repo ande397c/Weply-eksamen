@@ -66,6 +66,16 @@ article {
   background-size: cover;
 }
 
+.section_4 h5,
+.section_4 h3,
+.Info_title {
+  color: white;
+}
+
+.Info_title {
+  padding-top: 2rem;
+}
+
 /***************** Tablet ************************************************************************************************************************/
 @media (min-width: 730px) {
   .hero_section {
