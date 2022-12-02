@@ -25,6 +25,26 @@ img {
   padding: 2rem;
 }
 
+.number {
+  color: var(--numbers-highlight-color);
+  font-weight: var(--font-weight-medium);
+  font-size: var(--font-size-xxxl);
+  font-family: "montserrat", serif;
+}
+
+.bullet_enhed {
+  font-size: var(--font-size-xl);
+  font-family: "montserrat", serif;
+  color: var(--numbers-highlight-color);
+  font-weight: var(--font-weight-medium);
+}
+
+.enhed_contaiener {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
 /* Section 1, 2 & 3 styling  */
 
 .text_container {
@@ -36,11 +56,11 @@ h2 {
   margin-bottom: 1rem;
 }
 
-button {
+/* button {
   display: grid;
   justify-content: center;
   margin-top: 1rem;
-}
+} */
 
 article {
   margin-inline: 10%;
@@ -57,6 +77,11 @@ article {
   margin-bottom: 1rem;
 }
 
+.info_bullet button {
+  width: 9rem;
+  margin-block: 0.5rem;
+}
+
 .info_bullet_wrapper {
   margin-bottom: 3rem;
 }
@@ -66,14 +91,41 @@ article {
   background-size: cover;
 }
 
+.section button {
+  margin-block: 1rem;
+}
+
 .section_4 h5,
 .section_4 h3,
 .Info_title {
-  color: white;
+  color: var(--white);
 }
 
 .Info_title {
+  text-align: center;
   padding-top: 2rem;
+}
+
+iframe {
+  max-width: 80%;
+}
+
+#kort {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+
+#kort p {
+  color: var(--white);
+  font-size: var(--font-size-base);
+  padding-block: 1rem;
+}
+
+.info_wrapper {
+  display: grid;
+  justify-content: center;
 }
 
 /***************** Tablet ************************************************************************************************************************/
@@ -92,19 +144,24 @@ article {
     justify-content: space-evenly;
   }
 
-  .Info_title {
-    text-align: center;
-  }
-
   .section_3 {
     display: flex;
   }
 
-  .info_wrapper {
-    display: flex;
-    justify-content: space-evenly;
+  iframe {
+    max-width: 100%;
   }
 }
 /************************************************************* Desktop styling ******************************************************/
 @media (min-width: 1000px) {
+  .info_wrapper {
+    grid-template-columns: 1fr 1fr;
+    padding-inline: 5%;
+    align-items: center;
+    padding-top: 2rem;
+  }
+
+  #kort p {
+    font-size: var(--font-size-sm);
+  }
 }
