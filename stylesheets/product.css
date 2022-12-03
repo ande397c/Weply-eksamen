@@ -220,6 +220,62 @@ img {
   margin-left: 2rem;
 }
 
+/* -- Tabel styling --*/
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  grid-row: 2 / 4;
+  grid-column: 1/4;
+  position: relative;
+  z-index: 10;
+  background: var(--white);
+  box-shadow: 0 0 1rem rgb(0 0 0 / 20%);
+  margin-top: 1rem;
+}
+
+table img {
+  max-width: 2rem;
+  margin-inline: auto;
+  display: flex;
+}
+
+tr {
+  height: 3rem;
+}
+
+/* Zebra striping */
+tr:nth-of-type(odd) {
+  background: #f8f8f8;
+}
+th {
+  background: #fff;
+  color: black;
+  font-weight: bold;
+}
+td,
+th {
+  padding: 6px;
+  text-align: center;
+}
+
+@media (max-width: 600px) {
+  td,
+  th {
+    font-size: 12px;
+  }
+
+  table img {
+    max-width: 1.2rem;
+    margin-inline: auto;
+    display: flex;
+  }
+
+  tr td:nth-child(1) {
+    text-align: left;
+  }
+}
+
 /************************************************************* Tablet styling ******************************************************/
 
 @media (min-width: 700px) {
