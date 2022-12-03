@@ -433,8 +433,8 @@ th {
     margin-top: 2rem;
 
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 1fr 2fr 2fr 2fr;
+    grid-template-columns: 2fr 2fr 1fr 4rem;
+    grid-template-rows: 1fr 3fr 3fr 1fr;
   }
 
   .weply_vs_andre h3 {
@@ -443,7 +443,7 @@ th {
   }
   .weply_vs_andre .bg_grid {
     grid-row: 1/5;
-    grid-column: 3/4;
+    grid-column: 3/5;
   }
 
   /* Section 4 styling */
