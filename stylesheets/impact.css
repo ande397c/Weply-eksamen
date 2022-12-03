@@ -16,8 +16,25 @@ img {
   margin-bottom: 1rem;
 }
 
+.section_1 .bg_pic_container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  margin-left: 1rem;
+  width: auto;
+  height: 100%;
+}
+
+.section_1 .bg_grid {
+  grid-column: 1/4;
+  grid-row: 1/4;
+}
+
 .section_1 .pic {
-  overflow: hidden;
+  grid-column: 2/3;
+  grid-row: 2/3;
+  z-index: 1;
+  align-self: center;
 }
 
 h2 {
@@ -28,6 +45,42 @@ h2 {
   margin-bottom: 1rem;
 }
 
+
+
+.bg_pic_container p {
+  font-size: var(--font-size-md);
+  color: var(--white);
+  font-family: "montserrat", serif;
+}
+
+.section_2 .pic {
+  display: none;
+ }
+  
+.section_2 .blobs {
+    border-radius: 0 25px 25px 0;
+}
+
+.section_2 .bg_pic_container {
+  display: grid;
+  grid-template-columns: 1fr 2fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  margin-right: 1rem;
+}
+
+.section_2 .bg_grid {
+  grid-column: 1/4;
+  grid-row: 1/4;
+}
+
+.section_2 .bg_pic_container p{
+  grid-column: 1/3;
+  grid-row: 2/3;
+  z-index: 1;
+  margin-left: 2.5rem;
+}
+
+
 .section_3 ul {
   margin-block: 1.5rem;
 }
@@ -35,6 +88,82 @@ h2 {
 .section_3 ul li {
   margin-block: 0.6rem;
   color: var(--dark-gray);
+}
+
+.section_3 .pic {
+  display: none;
+ }
+
+.section_3 .bg_pic_container {
+  display: grid;
+  grid-template-columns: 1fr 2fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  margin-left: 1rem;
+}
+
+.section_3 .bg_grid {
+  grid-column: 1/4;
+  grid-row: 1/4;
+}
+
+.section_3 .bg_pic_container p{
+  grid-column: 2/4;
+  grid-row: 2/3;
+  z-index: 1;
+  margin-right: 2.5rem;
+}
+
+
+.section_4 .pic {
+  display: none;
+ }
+  
+.section_4 .blobs {
+    border-radius: 0 25px 25px 0;
+}
+
+.section_4 .bg_pic_container {
+  display: grid;
+  grid-template-columns: 1fr 2fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  margin-right: 1rem;
+}
+
+.section_4 .bg_grid {
+  grid-column: 1/4;
+  grid-row: 1/4;
+}
+
+.section_4 .bg_pic_container p{
+  grid-column: 1/3;
+  grid-row: 2/3;
+  z-index: 1;
+  margin-left: 2.5rem;
+}
+
+
+
+.section_5 .bg_pic_container {
+  display: grid;
+  grid-template-columns: 2rem 1fr 3rem;
+  grid-template-rows: 3rem 1fr 3rem;
+  margin-left: 1rem;
+}
+
+.section_5 .bg_grid {
+  grid-column: 2/4;
+  grid-row: 1/4;
+}
+
+.section_5 .bg_pic_container iframe{
+  grid-column: 1/3;
+  grid-row: 2/3;
+  z-index: 1;
+}
+
+iframe {
+  width: 100%;
+  height: auto;
 }
 
 main a {
@@ -60,7 +189,10 @@ main a {
   margin-top: 2rem;
 }
 
-@media (min-width: 730px) {
+/************************************************************* Tablet styling ******************************************************/
+
+
+@media (min-width: 700px) {
   .section_1 {
     display: grid;
     grid-template-columns: 3% 1fr 1fr;
@@ -83,13 +215,25 @@ main a {
     align-items: center;
   }
 
-  .section_2 .pic {
-    order: -1;
-  }
-
   .section_2 .text_container {
     grid-column: 3;
   }
+
+  .section_2 .bg_pic_container {
+    grid-row:1/2;
+  }
+
+  .section_2 .bg_pic_container p {
+  grid-row: 1/2;
+  }
+
+  .section_2 .pic {
+    display: block;
+    grid-column: 2/4;
+    grid-row: 2/4;
+    z-index:1;
+  }
+
 
   .section_3 {
     display: grid;
@@ -100,9 +244,28 @@ main a {
     align-items: center;
   }
 
+  .section_3 .pic {
+    display: block;
+    grid-row: 2/4;
+    grid-column: 1/3;
+    z-index: 1;
+  }
+
+  .section_3 .bg_pic_container {
+    grid-column: 3/4;
+    grid-row: 1/2;
+  }
+
+  .section_3 .bg_pic_container p {
+    grid-row: 1/2;
+  }
+
   .section_3 .text_container {
     grid-column: 2;
+    grid-row: 1/2;
   }
+
+
 
   .section_4 {
     display: grid;
@@ -113,13 +276,25 @@ main a {
     align-items: center;
   }
 
-  .section_4 .pic {
-    order: -1;
-  }
-
   .section_4 .text_container {
     grid-column: 3;
   }
+
+  .section_4 .bg_pic_container {
+    grid-row:1/2;
+  }
+
+  .section_4 .bg_pic_container p {
+  grid-row: 1/2;
+  }
+  
+  .section_4 .pic {
+    display: block;
+    grid-column: 2/4;
+    grid-row: 2/4;
+    z-index:1;
+  }
+
 
   .section_5 {
     display: grid;
@@ -134,6 +309,9 @@ main a {
     grid-column: 2;
   }
 
+  iframe {
+    height:revert-layer;
+  }
   .partnere_container img {
     min-width: 10rem;
     max-width: 15rem;
@@ -142,4 +320,113 @@ main a {
   .partnere_btn_container {
     gap: 3rem;
   }
+}
+
+/************************************************************* Desktop styling ******************************************************/
+
+
+@media (min-width: 1000px) {
+
+  .section_1 .bg_grid {
+    grid-column: 2/4;
+  }
+
+  .section_1 .pic {
+    grid-column: 2/4;
+    max-width: 60%;
+    justify-self: center;
+  }
+
+  .pic {
+    max-width: 80%;
+  }
+
+
+  .section_2 .bg_pic_container {
+    grid-template-columns: 1fr 2fr 2fr 1fr;
+    grid-template-rows: 2rem 1fr 1fr 1fr 2rem;
+    margin-right: 0;
+  }
+
+  .section_2 .bg_grid {
+    grid-column: 1/4;
+    grid-row: 1/5;
+  }
+
+  .section_2 .pic {
+    grid-column: 2/5;
+    grid-row: 3/6;
+    justify-self: end;
+  }
+
+  .section_2 .bg_pic_container p {
+    grid-column: 2/4;
+    grid-row: 2/3;
+    margin-left:0;
+    align-self: center;
+    max-width: 85%;
+  }
+
+
+
+
+  .section_3 .bg_pic_container {
+    grid-template-columns: 1fr 2fr 1fr;
+    grid-template-rows: 1fr 2fr 2fr 1rem;
+    margin-left: 0;
+  }
+
+  .section_3 .bg_grid {
+    grid-column: 2/5;
+    grid-row: 1/6;
+  }
+
+  .section_3 .pic {
+    grid-column:1/3;
+    grid-row: 2/4;
+    justify-self: end;
+  }
+
+  .section_3 .bg_pic_container p {
+    grid-column: 2/4;
+    grid-row: 1/2;
+    align-self: center;
+    justify-self: center;
+    margin-left: 0;
+    max-width: unset;
+  }
+
+
+
+  .section_4 .bg_pic_container {
+    grid-template-columns: 1fr 2fr 2fr 2rem;
+    grid-template-rows: 2rem 1fr 2fr 2fr 2rem;
+    margin-right: 0;
+  }
+
+  .section_4 .bg_grid {
+    grid-column: 1/4;
+    grid-row: 1/6;
+  }
+
+  .section_4 .pic {
+    grid-column: 2/5;
+    grid-row: 3/5;
+    justify-self: start;
+    max-width: unset;
+  }
+
+  .section_4 .bg_pic_container p {
+    grid-column: 2/4;
+    grid-row: 2/3;
+    margin-left:0;
+    align-self: center;
+    max-width: 85%;
+  }
+
+
+
+
+
+
 }
