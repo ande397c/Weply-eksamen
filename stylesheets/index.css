@@ -230,6 +230,8 @@ iframe {
 /***************** Tablet ************************************************************************************************************************/
 
 @media (min-width: 700px) {
+  
+
   /* Hero section */
 
   /* Mobil hero img, gets a display: none on tablet & desktop view */
