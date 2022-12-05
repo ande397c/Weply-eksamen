@@ -7,16 +7,40 @@ img {
 
 /* hero styling */
 
-.hero_section {
-  background-image: url("../img/bgd_placeholder.png");
-  background-size: contain;
+
+
+.hero_section{
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto;
+}
+
+.hero_section .bg_grid{
+  grid-column:1/2;
+  grid-row: 1/2;
+} 
+
+.hero_section .blobs {
+  border-radius: 0 0 0 0;
+}
+
+.hero_section .pic {
+  display: none;
 }
 
 .hero_text {
+  grid-column:1/2;
+  grid-row: 1/2;
+  margin-block: 4rem;
+
+
   color: white;
   text-align: center;
   padding: 1rem;
+  z-index: 20;
 }
+
+
 
 /* bullets */
 
@@ -87,8 +111,23 @@ article {
 }
 
 .section_4 {
-  background-image: url(../img/bgd_placeholder.png);
-  background-size: cover;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto 2fr;
+}
+
+.section_4 .blobs{
+  border-radius: 0;
+}
+.section_4 .bg_grid{
+  grid-column: 1/2;
+  grid-row: 1/3;
+}
+
+.section_4 article{
+  z-index: 20;
+  grid-column: 1/2;
+  grid-row: 1/2;
 }
 
 .section button {
@@ -121,18 +160,51 @@ iframe {
   color: var(--white);
   font-size: var(--font-size-base);
   padding-block: 1rem;
+  text-align: center;
 }
 
 .info_wrapper {
   display: grid;
   justify-content: center;
+  z-index: 20;
+  grid-column: 1/2;
+  grid-row: 2/3;
+
 }
 
 /***************** Tablet ************************************************************************************************************************/
-@media (min-width: 730px) {
-  .hero_section {
-    display: flex;
-    justify-content: space-evenly;
+@media (min-width: 700px) {
+  .hero_section{
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows:1fr 1fr ;
+  }
+  
+  .hero_section .bg_grid{
+    grid-column: 1/4;
+    grid-row:1/3;
+  }
+  
+  .hero_section article{
+    margin-inline:unset;
+    margin-bottom: 0;
+  }
+  .hero_text{
+    grid-row: 1/2;
+    text-align: unset;
+    align-self:end;
+    justify-self: center;
+    margin-block:0;
+    padding:0;
+  }
+
+  .hero_section .pic {
+    display: block;
+    z-index: 10;
+    grid-column: 2/4;
+    grid-row: 1/3;
+    align-self: center;
+    margin: 3rem;
+
   }
 
   .section_1 {
@@ -164,6 +236,11 @@ iframe {
 }
 /************************************************************* Desktop styling ******************************************************/
 @media (min-width: 1000px) {
+  .hero_section .pic {
+    width: 60%;
+    justify-self:center;
+  }
+  
   .info_wrapper {
     grid-template-columns: 1fr 1fr;
     padding-inline: 5%;
