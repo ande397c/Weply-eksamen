@@ -23,10 +23,14 @@ img {
   margin-inline: 2%;
 }
 
+#section_2 > h2 {
+  text-align: center;
+}
+
 .dropdown_container {
   margin-top: 2rem;
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
   gap: 1rem;
   margin-inline: 5%;
   justify-items: center;
@@ -35,6 +39,7 @@ img {
 .dropdown_element {
   transform: translateY(0px);
   transition: 0.2s ease-in-out;
+  max-width: 50%;
 }
 
 .dropdown_element > img {
@@ -112,6 +117,10 @@ img {
   display: none;
 }
 
+#dropdown_number {
+  width: 13rem;
+}
+
 #section_3 {
   padding: 15px;
   background-color: var(--dark-blue);
@@ -124,18 +133,6 @@ img {
 #section_3 p {
   color: var(--white);
   padding-block: 2rem;
-}
-
-.book_btn {
-  padding: 10px;
-  outline: none;
-  background: none;
-  border: 2px solid var(--white);
-  height: 2.5rem;
-  width: 12rem;
-  text-align: center;
-  line-height: 0rem;
-  color: var(--white);
 }
 
 .book_btn_container {
@@ -177,7 +174,8 @@ img {
 
   #section_3 {
     padding: 40px;
-    margin-right: 17em;
+    margin-right: 15em;
+    max-width: 70%;
   }
 
   .book_btn_container {
@@ -193,5 +191,11 @@ img {
   #section_3 h2,
   #section_3 p {
     max-width: 60%;
+  }
+
+  .dropdown_element {
+    transform: translateY(0px);
+    transition: 0.2s ease-in-out;
+    max-width: 70%;
   }
 }

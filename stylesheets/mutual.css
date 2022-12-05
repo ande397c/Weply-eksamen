@@ -253,7 +253,7 @@ a {
   background-color: var(--btn-primary-background-color);
   border: none;
   color: var(--white);
-  width: 8rem;
+  width: 9rem;
   padding-block: var(--spacing-3);
   padding-inline: var(--spacing-3);
   font-size: var(--font-size-base);
@@ -268,7 +268,7 @@ a {
   background-color: var(--btn-white-background-color);
   border: var(--border-blue-thin);
   color: var(--btn-primary-background-color);
-  width: 8rem;
+  width: 9rem;
   padding-block: var(--spacing-3);
   padding-inline: var(--spacing-3);
   font-size: var(--font-size-base);
@@ -284,7 +284,7 @@ a {
   background-color: var(--btn-white-background-color);
   border: var(--border-white-thin);
   color: var(--white);
-  width: 8rem;
+  width: 10rem;
   padding-block: var(--spacing-3);
   padding-inline: var(--spacing-3);
   font-size: var(--font-size-base);
@@ -295,11 +295,27 @@ a {
   cursor: pointer;
 }
 
+/* -- Button hover styles --*/
+
+.btn_primary:hover {
+  background-color: #082348;
+}
+
+.btn_secondary:hover {
+  background-color: var(--dark-blue);
+  color: var(--white);
+}
+
+.btn_white:hover {
+  background-color: var(--white);
+  color: var(--dark-blue);
+}
+
 .btn_header_primary {
   background-color: var(--btn-primary-background-color);
-  border: none;
+  border: var(--border-blue-thin);
   color: var(--white);
-  width: 6rem;
+  width: 7rem;
   padding-block: var(--spacing-3);
   padding-inline: var(--spacing-3);
   font-size: var(--font-size-sm);
@@ -310,11 +326,15 @@ a {
   cursor: pointer;
 }
 
+.btn_header_primary:hover {
+  background-color: #082348;
+}
+
 .btn_header_secondary {
   background-color: var(--btn-white-background-color);
   border: var(--border-blue-thin);
   color: var(--btn-primary-background-color);
-  width: 6rem;
+  width: 7rem;
   padding-block: var(--spacing-3);
   padding-inline: var(--spacing-3);
   font-size: var(--font-size-sm);
@@ -324,6 +344,11 @@ a {
   text-decoration: none;
   border-radius: 4px;
   cursor: pointer;
+}
+
+.btn_header_secondary:hover {
+  background-color: var(--dark-blue);
+  color: var(--white);
 }
 
 /* bg blob styling + animation */
@@ -791,6 +816,11 @@ footer p {
   font-size: 0.8rem;
 }
 
+/* .input_container input:focus {
+  background-color: var(--dark-gray);
+  color: var(--dark-blue);
+} */
+
 .input_container button {
   border: 1px solid var(--white);
   border-radius: 3px;
@@ -800,6 +830,12 @@ footer p {
   margin-left: 0.3rem;
   color: var(--white);
   font-size: 0.8rem;
+}
+
+.input_container button:hover {
+  background-color: var(--white);
+  color: var(--dark-blue);
+  cursor: pointer;
 }
 
 #try_weply {

@@ -136,7 +136,12 @@ iframe {
   }
 
   .section_1 {
-    display: flex;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .section_1 p {
+    height: 11rem;
   }
 
   .bullets_wrapper {
@@ -145,7 +150,12 @@ iframe {
   }
 
   .section_3 {
-    display: flex;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .section_3 p {
+    height: 10rem;
   }
 
   iframe {

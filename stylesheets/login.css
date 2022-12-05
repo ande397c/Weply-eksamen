@@ -115,6 +115,22 @@
   font-size: inherit;
 }
 
+/* -- form validation styling  -- */
+.floating-input:invalid:not(:placeholder-shown) {
+  border-bottom: 2px solid red;
+}
+
+.floating-input:invalid:not(:placeholder-shown) ~ label {
+  color: red;
+}
+
+.disabled {
+  opacity: 0.8;
+  cursor: not-allowed;
+}
+
+/*-- Split screen placeholder  --*/
+
 #login_placeholder {
   background-image: url(../img/login-placeholder.png);
   background-repeat: no-repeat, no-repeat;

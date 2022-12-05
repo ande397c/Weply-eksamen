@@ -249,30 +249,32 @@ tr:nth-of-type(odd) {
   background: #f8f8f8;
 }
 th {
-  background: #fff;
-  color: black;
+  background: var(--white);
+  color: var(--black);
   font-weight: bold;
 }
 td,
 th {
   padding: 6px;
   text-align: center;
+  font-family: "Open Sans", sans-serif;
+}
+
+tr td:nth-child(1) {
+  text-align: left;
+  padding-left: 10px;
 }
 
 @media (max-width: 600px) {
   td,
   th {
-    font-size: 12px;
+    font-size: var(--font-size-base);
   }
 
   table img {
     max-width: 1.2rem;
     margin-inline: auto;
     display: flex;
-  }
-
-  tr td:nth-child(1) {
-    text-align: left;
   }
 }
 
@@ -472,6 +474,18 @@ th {
     grid-row: 1/2;
     margin-left: 0;
   }
+
+  /*-- Table styling --*/
+
+  td,
+  th {
+    font-size: var(--font-size-md);
+  }
+
+  tr td:nth-child(1) {
+    text-align: left;
+    padding-left: 25px;
+  }
 }
 
 /************************************************************* Desktop styling ******************************************************/
@@ -545,6 +559,12 @@ th {
   /* Section 4 */
   .gratis_prøve_card_left,
   .gratis_prøve_card_right {
-    max-width: 40rem;
+    max-width: 30rem;
+  }
+
+  /* -- Table -- */
+
+  thead > tr > th:nth-child(1) {
+    width: 20%;
   }
 }

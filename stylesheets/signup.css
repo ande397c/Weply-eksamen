@@ -1,3 +1,5 @@
+/*-- General styling --*/
+
 h1 {
   text-align: center;
   margin-block: 2rem;
@@ -17,6 +19,8 @@ main {
 #bullets {
   width: fit-content;
 }
+
+/*-- Signup form styling --*/
 
 #signup_form {
   width: 100%;
@@ -84,7 +88,7 @@ main {
 
 #form-phone-section {
   display: grid;
-  grid-template-columns: 1fr 3.5fr;
+  grid-template-columns: 2fr 3.5fr;
   gap: 2rem;
 }
 
@@ -105,6 +109,21 @@ main {
 
 [type="checkbox"]:hover {
   cursor: pointer;
+}
+
+/*-- Form validation --*/
+
+.floating-input:invalid:not(:placeholder-shown) {
+  border-bottom: 2px solid red;
+}
+
+.floating-input:invalid:not(:placeholder-shown) ~ label {
+  color: red;
+}
+
+.disabled {
+  opacity: 0.8;
+  cursor: not-allowed;
 }
 
 /* ____ Bullets section _______ */
@@ -137,6 +156,8 @@ main {
   margin-top: 2rem;
 }
 
+/*-- @media styling --*/
+
 @media (min-width: 1000px) {
   #content_wrapper {
     display: grid;
@@ -152,7 +173,7 @@ main {
 
   #signup_form {
     min-width: 420px;
-    max-width: 100%;
+    max-width: 70%;
     padding: 30px;
   }
 }

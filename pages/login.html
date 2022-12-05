@@ -49,7 +49,7 @@
 
           <div class="btn_container">
             <a href="../pages/login.html"> <button class="btn_header_secondary">Log ind</button></a>
-            <button class="btn_header_primary">Prøv gratis</button>
+            <a href="../pages/signup.html"> <button class="btn_header_primary">Prøv gratis</button></a>
           </div>
         </nav>
       </section>
@@ -70,7 +70,7 @@
             </div>
 
             <div class="field_container">
-              <input class="floating-input" type="password" placeholder=" " name="kodeord" />
+              <input class="floating-input" type="password" placeholder=" " name="kodeord" minlength="5" />
               <label for="kodeord">Password</label>
             </div>
 
@@ -81,7 +81,7 @@
             </article>
 
             <div class="login_btn_container">
-              <button class="btn_primary">Login</button>
+              <button class="btn_primary" id="login_btn">Login</button>
             </div>
             <p class="account_message">Har du ikke et account? <a href="#">kontakt</a> os</p>
           </form>
@@ -190,5 +190,6 @@
       <p>© Weply A/S 2022 | CVR 35414800 | Vesterbrogade 6D, 1620 København V</p>
     </footer>
     <script src="../scripts/main.js"></script>
+    <script src="../scripts/login.js"></script>
   </body>
 </html>

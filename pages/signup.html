@@ -49,7 +49,7 @@
 
           <div class="btn_container">
             <a href="../pages/login.html"> <button class="btn_header_secondary">Log ind</button></a>
-            <button class="btn_header_primary">Prøv gratis</button>
+            <a href="../pages/signup.html"> <button class="btn_header_primary">Prøv gratis</button></a>
           </div>
         </nav>
       </section>
@@ -59,7 +59,7 @@
     <main>
       <h1>
         Konverter din trafik til leads – <br />
-        Prøv gratis i 7 dage
+        Prøv chatten gratis i 7 dage
       </h1>
 
       <section id="content_wrapper">
@@ -75,7 +75,7 @@
 
           <article id="form-phone-section">
             <div class="field_container">
-              <input class="floating-input" placeholder=" " required type="tel" name="landkode" minlength="1" maxlengthlength="4" />
+              <input class="floating-input" placeholder=" " required type="tel" name="landkode" minlength="1" maxlengthlength="4" pattern="^[+]*[(]{0,1}[0-9]{1,4}[)]{0,1}[-\s\./0-9]*$" />
 
               <label for="landkode">Landkode</label>
             </div>
@@ -88,13 +88,13 @@
           </article>
 
           <div class="field_container">
-            <input class="floating-input" type="url" placeholder=" " name="url" />
+            <input class="floating-input" type="url" placeholder=" " name="url" required />
             <label for="url">Din hjemmeside</label>
           </div>
 
           <label class="checkbox"> <input type="checkbox" id="checkbox" /> Jeg accepterer, at I bruger mine oplysninger til at kontakte mig. </label>
 
-          <button class="btn_primary">CTA</button>
+          <button class="btn_primary" id="form_button">Skriv mig op</button>
         </form>
 
         <article id="bullets_section">
@@ -131,11 +131,11 @@
       </section>
     </main>
     <!-- footer start -->
-    
-  <footer>
+
+    <footer>
       <div class="bg_grid">
         <div class="blobs">
-        <div class="blob big-blob"></div>
+          <div class="blob big-blob"></div>
           <div class="blob"></div>
           <div class="blob"></div>
           <div class="blob"></div>
@@ -143,22 +143,22 @@
           <div class="blob"></div>
           <div class="blob"></div>
         </div>
-    </div>
+      </div>
 
       <div id="footer_column_grid">
         <article id="footer_contact">
           <h3>Kontakt</h3>
           <ul>
             <li>
-              <img class="footer_icon" src="/assets/icons/email.svg" alt="">
+              <img class="footer_icon" src="/assets/icons/email.svg" alt="" />
               <a href="mailto:info@weply.dk">info@weply.dk</a>
             </li>
             <li>
-              <img class="footer_icon" src="/assets/icons/call.svg" alt="">
+              <img class="footer_icon" src="/assets/icons/call.svg" alt="" />
               <a href="tel:4521199199">+ 45 21 199 199</a>
             </li>
             <li>
-              <img class="footer_icon" src="/assets/icons/message-alt.svg" alt="">
+              <img class="footer_icon" src="/assets/icons/message-alt.svg" alt="" />
               <a href="#">Spørg en chatkonsulent</a>
             </li>
           </ul>
@@ -232,7 +232,7 @@
       <hr />
       <p class="footer_bottom_p">© Weply A/S 2022 | CVR 35414800 | Vesterbrogade 6D, 1620 København V</p>
     </footer>
- <!--footer slut-->
+    <!--footer slut-->
     <script src="../scripts/main.js"></script>
     <script src="../scripts/signup.js"></script>
   </body>
