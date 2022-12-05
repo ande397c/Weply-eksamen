@@ -4,7 +4,7 @@ img {
 }
 
 #hero {
-  padding-top: 1rem;
+  margin-top: 3rem;
 }
 
 
@@ -203,9 +203,7 @@ grid-row: 1/4;
 
 @media (min-width: 700px) {
   
-  .section {
-    margin-bottom: 4rem;
-  }
+
 
   #hero {
     display: grid;
@@ -226,8 +224,8 @@ grid-row: 1/4;
 
   #hero .bg_pic_container{
     grid-template-columns: 1fr 2fr 2fr 2rem;
-    grid-template-rows: 1fr 1fr 1fr 1fr 3rem;
-    margin-right: 0;
+    grid-template-rows: 2fr 1fr 1fr 1fr 3rem;
+    margin-right: 3rem;
     height: 100%;
 
     grid-column: 1/2;

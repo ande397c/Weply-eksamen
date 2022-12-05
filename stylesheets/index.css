@@ -1,6 +1,7 @@
 img {
   height: auto;
   width: 100%;
+  border-radius: 7px;
 }
 
 /***************** Mobil ************************************************************************************************************************/
@@ -84,7 +85,8 @@ h2 {
   grid-column: 1/5;
   grid-row: 2/5;
 }
-iframe {
+
+.section_1 .pic {
   grid-column: 2/4;
   grid-row: 1/4;
   z-index: 1;
@@ -115,7 +117,6 @@ iframe {
   grid-column: 1/2;
   grid-row: 2/3;
   z-index: 1;
-  max-width: 60%;
   justify-self: end;
 }
 
@@ -234,6 +235,13 @@ iframe {
 
   /* Hero section */
 
+  .hero_text h1 {
+    margin-bottom: 2rem;
+    max-width: 72%;
+  }
+
+
+
   /* Mobil hero img, gets a display: none on tablet & desktop view */
   .hero_pic_mobile {
     display: none;
@@ -296,9 +304,7 @@ iframe {
     align-items: center;
   }
 
-  .hero_text h1 {
-    margin: 0;
-  }
+ 
 
   .hero_pic_desktop {
     grid-column-start: 3;
@@ -391,13 +397,15 @@ iframe {
     margin-right: 0;
     max-width: none;
     grid-template-columns: 3fr 2rem 1fr;
-    grid-template-rows: 2rem 1fr 2rem;
+    grid-template-rows:1fr 3fr 1fr;
+    /* grid-template-rows: 2rem 1fr 2rem; */
   }
 
   .section_2 .bg_pic_container .pic {
-    grid-column: 1/2;
+    grid-column: 1/4;
     grid-row: 2/3;
-    max-width: 66%;
+    align-self: center;
+    max-width: 83%;
   }
 
   .section_2 .bg_pic_container .bg_grid {
@@ -478,8 +486,13 @@ iframe {
   }
   /* Hero section */
 
-  h1 {
+  .hero_text h1 {
     line-height: unset;
+    max-width: 84%;
+  }
+
+  .hero_text h4 {
+    max-width: 66%;
   }
   .hero_section {
     display: grid;
