@@ -1,7 +1,6 @@
 img {
   height: auto;
   width: 100%;
-  border-radius: 7px;
 }
 
 /***************** Mobil ************************************************************************************************************************/
@@ -339,9 +338,6 @@ h2 {
     gap: 1.9rem;
   }
 
-  .section_1 {
-    margin-top: 1rem;
-  }
 
   /* Section 1  */
 
@@ -481,9 +477,6 @@ h2 {
     grid-row: 1 / 5;
   }
 
-  .section_1 {
-    margin-top: rem;
-  }
   /* Hero section */
 
   .hero_text h1 {
