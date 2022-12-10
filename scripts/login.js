@@ -1,5 +1,6 @@
 const loginButton = document.querySelector("#login_btn");
 const inputFields = document.querySelectorAll(".floating-input");
+const backButton = document.querySelector(".back_container");
 
 window.addEventListener("load", setup);
 
@@ -8,11 +9,13 @@ function setup() {
 
   inputFields[0].addEventListener("input", checkMailValidation);
   inputFields[1].addEventListener("input", accesLogin);
+
+  backButton.addEventListener("click", () => {
+    history.back();
+  });
 }
 
 function accesLogin(e) {
-  console.log("accesLogin");
-
   let mailValidity = checkMailValidation();
   console.log(mailValidity);
 
