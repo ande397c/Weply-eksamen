@@ -1,3 +1,19 @@
+/* --Back section --*/
+
+.back_container {
+  display: flex;
+  align-items: center;
+  margin: 1rem;
+}
+
+.back_container img {
+  max-width: 2rem;
+}
+
+.back_container:hover {
+  cursor: pointer;
+}
+
 /* -- login form -- */
 
 #form_container {

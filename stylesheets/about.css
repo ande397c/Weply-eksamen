@@ -7,18 +7,16 @@ img {
 
 /* hero styling */
 
-
-
-.hero_section{
+.hero_section {
   display: grid;
   grid-template-columns: 1fr;
   grid-template-rows: auto;
 }
 
-.hero_section .bg_grid{
-  grid-column:1/2;
+.hero_section .bg_grid {
+  grid-column: 1/2;
   grid-row: 1/2;
-} 
+}
 
 .hero_section .blobs {
   border-radius: 0 0 0 0;
@@ -29,18 +27,15 @@ img {
 }
 
 .hero_text {
-  grid-column:1/2;
+  grid-column: 1/2;
   grid-row: 1/2;
   margin-block: 4rem;
-
 
   color: white;
   text-align: center;
   padding: 1rem;
   z-index: 20;
 }
-
-
 
 /* bullets */
 
@@ -116,15 +111,15 @@ article {
   grid-template-rows: auto 2fr;
 }
 
-.section_4 .blobs{
+.section_4 .blobs {
   border-radius: 0;
 }
-.section_4 .bg_grid{
+.section_4 .bg_grid {
   grid-column: 1/2;
   grid-row: 1/3;
 }
 
-.section_4 article{
+.section_4 article {
   z-index: 20;
   grid-column: 1/2;
   grid-row: 1/2;
@@ -169,32 +164,31 @@ iframe {
   z-index: 20;
   grid-column: 1/2;
   grid-row: 2/3;
-
 }
 
 /***************** Tablet ************************************************************************************************************************/
 @media (min-width: 700px) {
-  .hero_section{
+  .hero_section {
     grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows:1fr 1fr ;
+    grid-template-rows: 1fr 1fr;
   }
-  
-  .hero_section .bg_grid{
+
+  .hero_section .bg_grid {
     grid-column: 1/4;
-    grid-row:1/3;
+    grid-row: 1/3;
   }
-  
-  .hero_section article{
-    margin-inline:unset;
+
+  .hero_section article {
+    margin-inline: unset;
     margin-bottom: 0;
   }
-  .hero_text{
+  .hero_text {
     grid-row: 1/2;
     text-align: unset;
-    align-self:end;
+    align-self: end;
     justify-self: center;
-    margin-block:0;
-    padding:0;
+    margin-block: 0;
+    padding: 0;
   }
 
   .hero_section .pic {
@@ -204,7 +198,6 @@ iframe {
     grid-row: 1/3;
     align-self: center;
     margin: 3rem;
-
   }
 
   .section_1 {
@@ -213,7 +206,7 @@ iframe {
   }
 
   .section_1 p {
-    height: 11rem;
+    height: 14rem;
   }
 
   .bullets_wrapper {
@@ -238,9 +231,9 @@ iframe {
 @media (min-width: 1000px) {
   .hero_section .pic {
     width: 60%;
-    justify-self:center;
+    justify-self: center;
   }
-  
+
   .info_wrapper {
     grid-template-columns: 1fr 1fr;
     padding-inline: 5%;

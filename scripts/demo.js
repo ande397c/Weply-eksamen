@@ -4,7 +4,7 @@ const dropdownDivs = document.querySelectorAll(".dropdown_element");
 
 const dropDownNumberBtn = document.querySelector("#dropdown_number");
 
-let dropDownCounter = 3;
+let dropDownCounter = 6;
 
 window.addEventListener("load", setup);
 
@@ -24,12 +24,12 @@ function toggleDropdown(e) {
   const clickedElement = e.target.parentElement;
   // const dropdownElementsSpan = e.target.previousSibling.nextSibling.childNodes[1];
 
-  clickedElement.classList.toggle("test");
+  clickedElement.classList.toggle("expand");
 
   let siblings = getSiblings(clickedElement);
 
   for (i = 0; i < siblings.length; i++) {
-    siblings[i].classList.remove("test");
+    siblings[i].classList.remove("expand");
   }
 }
 
