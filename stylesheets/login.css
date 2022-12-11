@@ -3,7 +3,7 @@
 .back_container {
   display: flex;
   align-items: center;
-  margin: 1rem;
+  margin: 2rem;
 }
 
 .back_container img {
@@ -125,10 +125,6 @@
 .login_btn_container {
   display: flex;
   justify-content: left;
-}
-
-.account_message > a {
-  font-size: inherit;
 }
 
 /* -- form validation styling  -- */
