@@ -227,10 +227,94 @@ h2 {
   }
 }
 
+/*-- Popup styling --*/
+
+.cookie_popup {
+  max-width: 21em;
+  min-width: 18em;
+  height: 140px;
+  position: fixed;
+  left: 10px;
+  bottom: 163px;
+  background-color: whitesmoke;
+  z-index: 100;
+  box-shadow: 0 1rem 2rem rgb(0 0 0 / 10%);
+  display: flex;
+  border-radius: 2px;
+  transition: all 0.5s;
+}
+
+.cookie_popup .text_content {
+  border-right: 1px solid grey;
+  padding: 7px;
+}
+
+.cookie_popup h5 {
+  font-weight: 600;
+  color: var(--black);
+}
+
+.cookie_popup p {
+  line-height: normal;
+  color: var(--black);
+}
+
+.ui_content {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.ui_content p {
+  margin: 0;
+}
+
+.settings,
+.close {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #d9d9d9;
+}
+
+.ui_content div:first-child {
+  border-bottom: 1px solid grey;
+}
+
+.close:hover {
+  cursor: pointer;
+}
+
+.hidePopup {
+  opacity: 0;
+  left: -100%;
+}
+
+.showPopup {
+  opacity: 1;
+  left: 0;
+}
+
+.popup_overlay-active {
+  display: block;
+  opacity: 1;
+  visibility: visible;
+}
+
+.overflow body {
+  overflow: hidden;
+}
+
+/*-- Popup styling slut --*/
+
 /***************** Tablet ************************************************************************************************************************/
 
 @media (min-width: 700px) {
-  
+  .cookie_popup {
+    width: 22em;
+    height: 150px;
+  }
 
   /* Hero section */
 
@@ -238,8 +322,6 @@ h2 {
     margin-bottom: 2rem;
     max-width: 72%;
   }
-
-
 
   /* Mobil hero img, gets a display: none on tablet & desktop view */
   .hero_pic_mobile {
@@ -303,8 +385,6 @@ h2 {
     align-items: center;
   }
 
- 
-
   .hero_pic_desktop {
     grid-column-start: 3;
     grid-column-end: 4;
@@ -337,7 +417,6 @@ h2 {
   .hero_section .data_bullets_wrapper {
     gap: 1.9rem;
   }
-
 
   /* Section 1  */
 
@@ -393,7 +472,7 @@ h2 {
     margin-right: 0;
     max-width: none;
     grid-template-columns: 3fr 2rem 1fr;
-    grid-template-rows:1fr 3fr 1fr;
+    grid-template-rows: 1fr 3fr 1fr;
     /* grid-template-rows: 2rem 1fr 2rem; */
   }
 

@@ -24,6 +24,7 @@ function setup() {
 
 function submitForm() {
   // e.preventDefault();
+  // console.log("submit form");
 }
 
 function handlePhoneInput(e) {
