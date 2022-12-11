@@ -46,7 +46,7 @@ img {
 
 .vertical_line {
   display: inline-block;
-  border-left: 1px solid var(--light-gray);
+  border-left: 1px solid gainsboro;
 }
 
 .hero_buttons {

@@ -148,9 +148,7 @@ html {
   scroll-behavior: smooth;
 }
 
-main {
-  margin-top: 5rem;
-}
+
 
 .menu-dropdown .menu-link {
   cursor: default;
@@ -1036,6 +1034,8 @@ footer a:hover:after {
 
 /* -- Header styling -- */
 @media only screen and (max-width: 830px) {
+
+  
   .menu-item a {
     height: 4rem;
   }
@@ -1124,6 +1124,10 @@ footer a:hover:after {
 /* -- Header slut -- */
 
 @media (min-width: 830px) {
+  main {
+    margin-top: 5rem;
+  }
+  
   .cookie_popup {
     width: 400px;
     height: 180px;
