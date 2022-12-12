@@ -140,7 +140,6 @@ img {
 
 .section_2 .section_button {
   text-align: center;
-  margin-block: 1rem;
 }
 
 .section_3 .weply_vs_andre {
@@ -164,7 +163,7 @@ img {
 
 .section_4 h2 {
   text-align: center;
-  margin-bottom: 2rem;
+  margin-bottom: 4rem;
 }
 
 .action_cards {
@@ -176,8 +175,7 @@ img {
 
 .gratis_prøve_card_left {
   margin-top: 1rem;
-  max-width: 20rem;
-  padding-left: 10%;
+  padding-inline: 16%;
   grid-column: 1/2;
   grid-row: 1/2;
   z-index: 1;
@@ -208,8 +206,7 @@ img {
 
 .gratis_prøve_card_right {
   margin-top: 1rem;
-  padding-left: 4rem;
-  max-width: 25rem;
+ padding-inline: 16%;
   grid-column: 1/2;
   grid-row: 2/3;
   z-index: 1;
@@ -392,15 +389,15 @@ tr td:nth-child(1) {
 
   .section_2 .text_container {
     grid-column: 3/4;
-    max-width: 20rem;
-    /* margin-top: 3rem; */
+    max-width: 28rem;
     grid-row: 1/3;
     justify-self: center;
   }
   .section_2 .section_button {
     grid-column: 3/4;
     margin-left: 11.3rem;
-    justify-self: stretch;
+    justify-self: center;
+    margin-right: 1.4rem;
   }
 
   .section_2 .blobs {
@@ -466,12 +463,10 @@ tr td:nth-child(1) {
 
   .gratis_prøve_card_left {
     grid-column: 1/2;
-    margin-right: 0;
   }
   .gratis_prøve_card_right {
     grid-column: 3/4;
     grid-row: 1/2;
-    margin-left: 0;
   }
   .action_cards .left {
     margin-right: 0;
@@ -572,15 +567,11 @@ tr td:nth-child(1) {
     justify-self: center;
   }
   .section_2 .section_button {
-    margin-left: 11.3rem;
-    justify-self: stretch;
+    margin-left: 21rem;
+    justify-self: center;
   }
 
-  /* Section 4 */
-  .gratis_prøve_card_left,
-  .gratis_prøve_card_right {
-    max-width: 30rem;
-  }
+
 
   /* -- Table -- */
 

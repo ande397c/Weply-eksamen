@@ -1,4 +1,8 @@
 
+#blog_header {
+  margin-block: 2rem;
+}
+
 #blog_header .text_container {
     margin-inline: 10%;
 

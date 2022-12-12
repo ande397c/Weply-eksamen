@@ -3,12 +3,14 @@ img {
   width: 100%;
 }
 
+
+
 .section_1 {
   margin-top: 2rem;
 }
 
 .text_container {
-  margin-inline: 10%;
+  margin-right: 10%;
   margin-bottom: 1rem;
 }
 
@@ -192,7 +194,7 @@ h2 {
   grid-row: 1/4;
 }
 
-.section_5 .bg_pic_container iframe {
+.section_5 .bg_pic_container iframe, .pic {
   grid-column: 1/3;
   grid-row: 2/3;
   z-index: 1;
