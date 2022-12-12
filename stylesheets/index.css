@@ -170,6 +170,10 @@ aspect-ratio: 16/9;
   margin-bottom: 1rem;
 }
 
+.data_bullet_container h4 {
+  margin-top: 1rem;
+}
+
 /* Kunde banner  */
 
 .kunde_banner {

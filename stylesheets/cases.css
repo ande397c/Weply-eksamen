@@ -22,27 +22,6 @@
   margin-right: auto;
 }
 
-/* #cases_header {
-  text-align: left;
-  margin-top: 2rem;
-}
-
-#cases_header h1 {
-  margin-top: 0.5rem;
-}
-
-#cases_header h4 {
-  margin: 2rem 0;
-  max-width: 60ch;
-}
-
-#cases_header img {
-  max-width: 15rem;
-  max-height: 15rem;
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-} */
 
 #cases_content {
   display: flex;
@@ -78,8 +57,11 @@
 }
 .img_case_text h6 {
   color: var(--white);
-  font-size: var(--font-size-md);
-  font-weight: var(--font-weight-light);
+  font-size: var(--font-size-sm);
+  font-weight: var(--font-weight-medium);
+  font-family: "montserrat", serif;
+  max-width: 20rem;
+
 }
 
 .case_img_container {
@@ -118,15 +100,18 @@
 }
 
 .case_text h5 {
-  font-weight: var(--font-weight-semibold);
+  font-weight: var(--font-weight-medium);
   color: var(--black);
   font-style: italic;
-  font-size: var(--font-size-md);
+  font-size: var(--font-size-base);
 }
 
 .case_text .sub_text {
   color: var(--light-gray);
-  font-size: var(--font-size-base);
+  font-size: var(--font-size-sm);
+  font-weight: var(--font-weight-medium);  
+  font-family: "montserrat", serif;
+
   text-align: right;
   margin-block: 1rem;
 }
