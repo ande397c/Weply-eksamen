@@ -96,6 +96,12 @@ h2 {
   border-radius: 0.3rem;
 }
 
+iframe{
+  width: 100%;
+ height: 100%;
+aspect-ratio: 16/9;
+}
+
 /* Section 2 */
 .section_2 .blobs {
   border-radius: 0 20px 20px 0;
