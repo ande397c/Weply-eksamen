@@ -2,8 +2,11 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" /> 
+    <meta
+    name="description"
+    content="Gratis Leadværktøj | Få Leads gennem livechat | Trænede chatkonsulenter"
+    /><meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="../stylesheets/mutual.css" />
     <link rel="stylesheet" href="../stylesheets/demo.css" />
     <title>Weply | Demo</title>
@@ -17,6 +20,8 @@
             <img src="https://weply.dk/wp-content/uploads/2020/04/weply-logo-bluaa.png" alt="" />
           </fig>
         </a>
+        <a class="skip-nav" id="skip-nav" href="#focus-first"
+        >Spring navigation over</a>
 
         <div class="moible_btn_container">
           <button class="btn_header_primary">Prøv gratis</button>
@@ -31,7 +36,7 @@
         <nav class="navbar" id="navbar">
           <ul class="menu" id="menu">
             <li class="menu-item menu-dropdown">
-              <span class="menu-link" data-toggle="submenu">Produkt<i class="bx bx-chevron-down"></i></span>
+              <button class="menu-link" data-toggle="submenu">Produkt<i class="bx bx-chevron-down"></i></button>
 
               <ul class="submenu">
                 <li class="submenu-item"><a href="../pages/product.html" class="submenu-link">Hvad er det?</a></li>
@@ -48,16 +53,16 @@
           </ul>
 
           <div class="btn_container">
-            <a href="../pages/login.html"> <button class="btn_header_secondary">Log ind</button></a>
-            <a href="../pages/signup.html"> <button class="btn_header_primary">Prøv gratis</button></a>
+            <a href="../pages/login.html" class="btn_header_secondary"> Log ind</a>
+            <a href="../pages/signup.html" class="btn_header_primary"> Prøv gratis</a>
           </div>
         </nav>
       </section>
     </header>
     <!--Header slut-->
 
-    <main>
-      <section id="hero">
+    <main id="focus-first">
+      <section id="hero" >
         <article class="text">
           <h1>Hvordan du <br> håndtere din chat</h1>
           <h4>Vores trænede chatkonsulenter håndterer chats for mere end 2.000 virksomheder. De er specialister i at generere kvalificerede leads på tværs af industrier.</h4>
@@ -131,9 +136,11 @@
           <div class="dropdown_container">
             <div class="dropdown_element hide">
               <img src="/assets/produkt/icons/unik_chat_ikon.png" alt="" />
+           
               <h4>
                 Unik chat til dig <span><img src="../assets/icons/chevron-down.svg" alt="" /></span>
               </h4>
+            
               <p>Vi bygger og designer din chat, som du vil have den. Tilpas fx chattens farve til jeres brand og placering af den på siden.</p>
             </div>
             <div class="dropdown_element hide">
@@ -196,6 +203,7 @@
             </div>
           </div>
           <div class="dropdown_btn_container">
+
             <button class="btn_primary" id="dropdown_number">Vis flere funktioner</button>
           </div>
         </article>
@@ -285,8 +293,8 @@
             <li> <a class="footer-link" href="login.html">Log ind</a></li>
             <li><a class="footer-link" href="#">Cookiepolitik</a></li>
             <li><a class="footer-link" href="#">Brugerbetingelser</a>
-            <li><a class="footer-link" href="#">Sitemap</a></li>
-          </ul>
+              <li><a class="footer-link" href="../sitemap.html">Sitemap</a></li>
+            </ul>
         </article>
 
         <article class="trustpilot">

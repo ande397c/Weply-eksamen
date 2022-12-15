@@ -83,6 +83,7 @@ video {
   justify-items: center;
 }
 
+
 .dropdown_element {
   transform: translateY(0px);
   transition: 0.2s ease-in-out;
