@@ -11,6 +11,7 @@ img {
   display: grid;
   grid-template-columns: 1fr;
   grid-template-rows: auto;
+  margin-bottom: 2rem;
 }
 
 .hero_section .bg_grid {
@@ -31,12 +32,14 @@ img {
   grid-row: 1/2;
   margin-block: 4rem;
 
-  color: white;
   text-align: center;
   padding: 1rem;
   z-index: 20;
 }
 
+.hero_text h1 {
+  color: var(--white);
+}
 /* bullets */
 
 .bullet {
@@ -75,15 +78,9 @@ h2 {
   margin-bottom: 1rem;
 }
 
-/* button {
-  display: grid;
-  justify-content: center;
-  margin-top: 1rem;
-} */
-
 article {
   margin-inline: 10%;
-  margin-bottom: 1rem;
+  margin-bottom: 4rem;
 }
 
 /* kontakt info styling*/
