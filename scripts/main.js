@@ -53,7 +53,7 @@ function setActivePage() {
   let menuItems = document.querySelectorAll("#menu a");
   const currentLocation = location.href;
   const menuLength = menuItems.length;
-  const subMenuSpan = document.querySelector("#menu span");
+  const subMenuSpan = document.querySelector("#menu button");
 
   // Loop over links and style the link = to the current location
   for (let i = 0; i < menuLength; i++) {
