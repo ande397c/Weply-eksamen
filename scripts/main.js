@@ -33,6 +33,7 @@ function setScrolling() {
   } else {
     header.classList.remove("header-shadow");
   }
+
   // When y is between 1500 and 2100, show module
   if (y >= 1500 || y >= 2100) {
     topModule.className = "cta show";
