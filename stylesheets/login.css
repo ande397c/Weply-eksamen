@@ -5,6 +5,14 @@
   align-items: center;
   margin: 2rem;
   font-family: "montserrat", serif;
+
+
+}
+
+.back_container{
+  border: 0;
+  background-color: var(--white);
+
 }
 
 .back_container img {

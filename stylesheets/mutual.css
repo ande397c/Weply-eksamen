@@ -27,7 +27,6 @@
   --paragraph-secondary-color: var(--white);
 
   --numbers-highlight-color: var(--light-blue);
-
   --body-color: var(--white);
 
   --btn-primary-background-color: var(--dark-blue);
@@ -43,32 +42,18 @@
   --font-weight-bold: 700;
 
   /* Shadows */
-
   --shadow-small: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06);
   --shadow-medium: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
   --shadow-large: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
 
   /*Font-sizes*/
- 
-
-  /* version 2 - don´t delete */
---font-size-sm: clamp(0.7rem, 0.52vw + 0.57rem, 0.9rem);  
---font-size-base: clamp(0.88rem, 0.66vw + 0.72rem, 1.13rem);
---font-size-md: clamp(1.25rem, 0.15vw + 1.21rem, 1.33rem);
---font-size-lg: clamp(1.56rem, 0.39vw + 1.47rem, 1.78rem);
---font-size-xl: clamp(1.95rem, 0.76vw + 1.76rem, 2.37rem);
---font-size-xxl: clamp(2.44rem, 1.3vw + 2.12rem, 3.16rem);
---font-size-xxxl: clamp(3.05rem, 2.1vw + 2.53rem, 4.21rem); 
-
-  /* --font-size-sm: clamp(0.7rem, 0.52vw + 0.57rem, 0.9rem);
+  --font-size-sm: clamp(0.7rem, 0.52vw + 0.57rem, 0.9rem);  
   --font-size-base: clamp(0.88rem, 0.66vw + 0.72rem, 1.13rem);
-  --font-size-md: clamp(1.09rem, 0.82vw + 0.89rem, 1.41rem);
-  --font-size-lg: clamp(1.37rem, 1.02vw + 1.12rem, 1.76rem);
-  --font-size-xl: clamp(1.71rem, 1.28vw + 1.4rem, 2.2rem);
-  --font-size-xxl: clamp(2.14rem, 1.6vw + 1.75rem, 2.75rem);
-  --font-size-xxxl: clamp(2.67rem, 2vw + 2.18rem, 3.43rem); */
-
-
+  --font-size-md: clamp(1.25rem, 0.15vw + 1.21rem, 1.33rem);
+  --font-size-lg: clamp(1.56rem, 0.39vw + 1.47rem, 1.78rem);
+  --font-size-xl: clamp(1.95rem, 0.76vw + 1.76rem, 2.37rem);
+  --font-size-xxl: clamp(2.44rem, 1.3vw + 2.12rem, 3.16rem);
+  --font-size-xxxl: clamp(3.05rem, 2.1vw + 2.53rem, 4.21rem); 
   
   /*Letter spacing */
   --letter-spacing-lg: 0.15em;
@@ -90,10 +75,20 @@
   --spacing-12: 6rem;
   --spacing-13: 10rem;
   --spacing-14: 120rem;
+   
   /*Borders*/
   --border-white-thin: 2px solid var(--white);
   --border-blue-thin: 2px solid var(--dark-blue);
 }
+
+
+/* --font-size-sm: clamp(0.7rem, 0.52vw + 0.57rem, 0.9rem);
+  --font-size-base: clamp(0.88rem, 0.66vw + 0.72rem, 1.13rem);
+  --font-size-md: clamp(1.09rem, 0.82vw + 0.89rem, 1.41rem);
+  --font-size-lg: clamp(1.37rem, 1.02vw + 1.12rem, 1.76rem);
+  --font-size-xl: clamp(1.71rem, 1.28vw + 1.4rem, 2.2rem);
+  --font-size-xxl: clamp(2.14rem, 1.6vw + 1.75rem, 2.75rem);
+  --font-size-xxxl: clamp(2.67rem, 2vw + 2.18rem, 3.43rem); */
 
 /* -- Root slut -- */
 
@@ -216,6 +211,7 @@ a {
   text-decoration: none;
   border-radius: 4px;
   cursor: pointer;
+  text-align: center;
 }
 
 .btn_secondary {
@@ -232,6 +228,8 @@ a {
   text-decoration: none;
   border-radius: 4px;
   cursor: pointer;
+  text-align: center;
+
 }
 
 .btn_white {
@@ -247,12 +245,15 @@ a {
   text-decoration: none;
   border-radius: 4px;
   cursor: pointer;
+  text-align: center;
+
 }
 
 /* -- Button hover styles --*/
 
 .btn_primary:hover {
   background-color: #082348;
+  
 }
 
 .btn_secondary:hover {
@@ -278,6 +279,8 @@ a {
   text-decoration: none;
   border-radius: 4px;
   cursor: pointer;
+  text-align: center;
+
 }
 
 .btn_header_primary:hover {
@@ -298,6 +301,8 @@ a {
   text-decoration: none;
   border-radius: 4px;
   cursor: pointer;
+  text-align: center;
+
 }
 
 .btn_header_secondary:hover {
@@ -475,6 +480,41 @@ a {
 
 /************************************************************* Header ******************************************************/
 
+*:focus-visible {
+  outline: 2px solid black;
+  outline-offset:7px;
+  border-radius: 0 0 0   0;
+
+}
+
+footer a:focus-visible {
+  outline: 2px solid white;
+  outline-offset:7px;
+  border-radius: 0 0 0   0;
+}
+
+
+.skip-nav:focus-visible{
+  background-color: #f5f5f5 ;
+  padding: 0.5rem;
+  outline-offset: 0px;
+  text-decoration: underline;
+  
+}
+.skip-banner:focus-visible{
+  background-color: #f5f5f5 ;
+  padding: 0.5rem;
+  outline-offset: 0px;
+  text-decoration: underline;
+  
+}
+
+.menu-link{
+  border: none;
+  background-color: var(--white);
+}
+
+
 .header {
   position: fixed;
   bottom: 0;
@@ -492,6 +532,8 @@ a {
 .header-shadow {
   box-shadow: 0 0 1rem rgb(0 0 0 / 20%);
 }
+
+
 
 .container {
   height: auto;
@@ -692,6 +734,8 @@ footer .bg_grid .blobs {
   list-style: none;
   margin-bottom: 0.5rem;
 }
+
+
 
 .footer-nav a {
   font-family: "montserrat", serif;
@@ -1065,6 +1109,15 @@ footer a:hover:after {
     position: fixed;
   }
 
+  .menu-dropdown:focus-within > .submenu {
+    display: block;
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+    z-index: 10;
+  }
+
+
   .menu-dropdown:hover > .submenu {
     display: block;
     opacity: 1;
@@ -1162,6 +1215,32 @@ p {
   line-height: var(--spacing-7);
 }
 
+
+
+.skip-nav {
+  position: absolute;
+  top: 71px;
+  left:30px;
+  opacity: 0;
+}
+.skip-nav:focus-visible {
+  opacity: 1;
+  
+}
+
+
+.skip-banner {
+  position: absolute;
+  top: 23px;
+  left:63px;
+  opacity: 0;
+  z-index: 100;
+}
+.skip-banner:focus-visible {
+  opacity: 1;
+  
+}
+
 }
 
 /* desktop */
@@ -1169,7 +1248,11 @@ p {
 @media (min-width: 1000px) {
   .main_grid {
     margin-top: var(--spacing-13);
+
   }
+
+  
+
 }
 
 /************************************************************* General slut ****************************************************************************/
