@@ -66,6 +66,10 @@ video {
   z-index: 10;
 }
 
+#section_1 > .text {
+  max-width: 60ch;
+}
+
 #section_2 {
   margin-inline: 2%;
 }
@@ -83,7 +87,6 @@ video {
   justify-items: center;
 }
 
-
 .dropdown_element {
   transform: translateY(0px);
   transition: 0.2s ease-in-out;
@@ -96,6 +99,10 @@ video {
 
 .dropdown_element span img {
   max-width: 2rem;
+  pointer-events: none;
+}
+
+.dropdown_element span {
   pointer-events: none;
 }
 

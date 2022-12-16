@@ -10,6 +10,7 @@ img {
 .hero_section {
   margin-left: 1rem;
   margin-block: 2rem;
+  overflow: hidden;
 }
 
 .hero_text h1 {
@@ -60,6 +61,8 @@ img {
 .hero_buttons_wrapper {
   display: flex;
   gap: 2rem;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 
 /* Section 1, 2 & 3 styling  */
@@ -322,6 +325,11 @@ iframe {
 /***************** Tablet ************************************************************************************************************************/
 
 @media (min-width: 700px) {
+  .hero_buttons_wrapper {
+    flex-wrap: nowrap;
+    justify-content: initial;
+  }
+
   .cookie_popup {
     width: 22em;
     height: 150px;

@@ -7,6 +7,8 @@
     <meta name="description" content="Gratis Leadværktøj | Få Leads gennem livechat | Trænede chatkonsulenter" />
     <link rel="stylesheet" href="/stylesheets/mutual.css" />
     <link rel="stylesheet" href="/stylesheets/product.css" />
+    <!-- Scroll -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <title>Weply | Produkt side</title>
   </head>
   <body>
@@ -78,9 +80,11 @@
           </div>
         </div>
 
-        <article class="hero_h1"><h1>Det ultimative lead-værktøj</h1></article>
+        <article class="hero_h1" data-aos="fade-up" data-aos-delay="300">
+          <h1>Det ultimative lead-værktøj</h1>
+        </article>
 
-        <article class="bullet_container">
+        <article class="bullet_container" data-aos="fade-up" data-aos-delay="300">
           <div class="bullet">
             <img src="/assets/produkt/ikoner_tegnebraet_1.webp" alt="et ikon der passer til teksten" />
             <div class="bullet_text">
@@ -144,7 +148,7 @@
           </section>
 
           <section class="section_2 section">
-            <article class="text_container">
+            <article class="text_container" data-aos="fade-up" data-aos-delay="300">
               <h3>Få indblik i din chats performance</h3>
               <p>
                 I chattens dashboard kan du få et unikt indblik i din konverteringsrate og din målgruppes adfærd. Du kan bl.a. få svar på, hvad de spørger om, hvor på din hjemmeside de starter chatten, samt hvor de konverterer og
@@ -153,7 +157,7 @@
             </article>
 
             <div class="bg_pic_container">
-              <figure class="pic">
+              <figure class="pic" data-aos="fade-up" data-aos-delay="300">
                 <img src="/assets/produkt/dashboard_mockup.webp" alt=" En macbook med dashboard på display" />
               </figure>
 
@@ -176,7 +180,7 @@
           </section>
 
           <section class="section_3 section">
-            <article class="text_container">
+            <article class="text_container" data-aos="fade-up" data-aos-delay="300">
               <h2>Hvorfor os?</h2>
               <p>
                 Hos Weply har vi erfaring med at håndtere, servicere og udbyde en brugervenlig livechat-platform. Vi har erfaring inden for en række store brancher, blandt andet autobranchen, rejsebranchen og transportbranchen. På
@@ -257,7 +261,7 @@
             </article>
           </section>
 
-          <section class="section_4 section">
+          <section class="section_4 section" data-aos="fade-up" data-aos-delay="300">
             <h2>Lyst til at komme i gang?</h2>
             <article class="action_cards">
               <div class="gratis_prøve_card_left">
@@ -410,5 +414,10 @@
 
     <!--footer slut-->
     <script src="../scripts/main.js"></script>
+    <!-- Scroll -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
   </body>
 </html>

@@ -9,6 +9,8 @@
     /><meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="../stylesheets/mutual.css" />
     <link rel="stylesheet" href="../stylesheets/demo.css" />
+          <!-- Scroll -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <title>Weply | Demo</title>
   </head>
   <body>
@@ -63,7 +65,7 @@
 
     <main id="focus-first">
       <section id="hero" >
-        <article class="text">
+        <article class="text" data-aos="fade-up" data-aos-delay="300">
           <h1>Hvordan du <br> håndtere din chat</h1>
           <h4>Vores trænede chatkonsulenter håndterer chats for mere end 2.000 virksomheder. De er specialister i at generere kvalificerede leads på tværs af industrier.</h4>
         </article>
@@ -129,7 +131,7 @@
         </div>
       </section>
 
-      <section id="section_2" class="section">
+      <section id="section_2" class="section" data-aos="fade-up" data-aos-delay="300">
         <h2>Dyk ned i chattens mange funktioner</h2>
 
         <article class="dropdown_elements">
@@ -209,7 +211,7 @@
         </article>
       </section>
 
-      <section id="section_3" class="section">
+      <section id="section_3" class="section" data-aos="fade-up" data-aos-delay="500">
         <article>
           <h2>
             Ikke helt solgt endnu? <br />
@@ -371,5 +373,10 @@
  <!--footer slut-->
     <script src="../scripts/main.js"></script>
     <script src="../scripts/demo.js"></script>
+      <!-- Scroll -->
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
   </body>
 </html>

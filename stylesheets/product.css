@@ -201,12 +201,12 @@ img {
 
 .white_button {
   padding-block: 3rem;
-  margin-inline: 30%;
+  margin-inline: 20%;
 }
 
 .gratis_prøve_card_right {
   margin-top: 1rem;
- padding-inline: 16%;
+  padding-inline: 16%;
   grid-column: 1/2;
   grid-row: 2/3;
   z-index: 1;
@@ -340,11 +340,9 @@ tr td:nth-child(1) {
     align-self: center;
   }
 
-  .bullet img{
+  .bullet img {
     width: 3rem;
   }
-
-
 
   /* section 1 styling */
 
@@ -510,10 +508,9 @@ tr td:nth-child(1) {
     max-width: 36rem;
     margin-bottom: 7rem;
     margin-left: 0;
-
   }
 
-  .bullet{
+  .bullet {
     margin: 0;
   }
 
@@ -532,9 +529,9 @@ tr td:nth-child(1) {
     grid-column: 3/6;
     grid-row: 1/2;
   }
-.hero_section .pic {
-  max-width: 73%;
-}
+  .hero_section .pic {
+    max-width: 73%;
+  }
   /* section 1 */
 
   .section_1 {
@@ -570,8 +567,6 @@ tr td:nth-child(1) {
     margin-left: 21rem;
     justify-self: center;
   }
-
-
 
   /* -- Table -- */
 
